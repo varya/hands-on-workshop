@@ -1,7 +1,4 @@
 import "../css/index.css";
-// Import css files
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Head from "next/head";
 import Layout from "@components/layout";
 

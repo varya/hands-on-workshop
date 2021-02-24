@@ -11,7 +11,7 @@ export default function Section({ children, title, className, wide = false }) {
     </>
   );
   return (
-    <section className={clsx(className, "bg-white border-b py-8")}>
+    <section className={clsx("bg-white border-b py-8", className)}>
       <div
         className={clsx(
           `${!wide ? "container max-w-5xl" : ""}`,

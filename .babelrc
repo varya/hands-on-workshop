@@ -1,4 +1,4 @@
 {
   "presets": ["next/babel"],
-  "plugins": ["inline-react-svg"]
+  "plugins": [["babel-plugin-inline-react-svg", { "svgo": false }]]
 }
