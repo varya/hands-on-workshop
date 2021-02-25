@@ -9,6 +9,7 @@ import Card from "@components/card";
 import Button from "@components/button";
 import Timeline, { TimelineItem } from "@components/timeline";
 import Testimonial from "@components/testimonials";
+import LocalTime from "@components/local-time";
 
 import DesignIcon from "../public/sketch.svg";
 import DevIcon from "../public/web-development.svg";
@@ -43,7 +44,7 @@ export default function IndexPage() {
           <p className="uppercase tracking-loose w-full text-center font-bold text-xl">
             8-9 April 2021
             <br />
-            10-13 EET
+            <LocalTime start={10} end={13} />
           </p>
           <Button variant="base" className="mb-0 mt-12">
             Register
