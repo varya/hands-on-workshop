@@ -19,19 +19,26 @@
   },
   "homepage": "https://github.com/taylorbryant/next-starter-tailwind#readme",
   "dependencies": {
+    "babel-plugin-inline-react-svg": "^1.1.2",
+    "clsx": "^1.1.1",
+    "imagemin-optipng": "^8.0.0",
     "next": "10.0.4",
     "react": "17.0.1",
     "react-dom": "17.0.1"
   },
   "devDependencies": {
+    "@svgr/webpack": "^5.5.0",
     "autoprefixer": "10.1.0",
+    "babel-eslint": "^10.1.0",
     "classnames": "2.2.6",
     "eslint": "^7.20.0",
+    "imagemin-svgo": "^8.0.0",
     "postcss": "8.2.1",
     "postcss-100vh-fix": "1.0.2",
     "postcss-flexbugs-fixes": "5.0.2",
     "postcss-hover-media-feature": "1.0.0",
     "postcss-preset-env": "6.7.0",
+    "svgo": "^2.0.3",
     "tailwindcss": "2.0.2"
   }
 }

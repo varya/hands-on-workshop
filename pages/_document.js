@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head />
-        <body>
+        <body className="leading-normal tracking-normal text-white gradient">
           <Main />
           <NextScript />
         </body>

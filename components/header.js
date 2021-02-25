@@ -1,22 +1,22 @@
-import Link from "next/link";
 import { useState } from "react";
-import cn from "classnames";
-import Image from "next/image";
-
+import Nav from "@components/nav";
+import { useScrollPosition } from "../hooks/useScrollPosition";
+import { HERO_HEIGHT } from "@components/hero";
 export default function Header() {
-  const [mobileMenuIsOpen, setMobileMenuIsOpen] = useState(false);
+  const [visible, setVisible] = useState(false);
+  useScrollPosition(
+    ({ currPos }) => {
+      const shouldShow = Math.abs(currPos.y) > HERO_HEIGHT;
+      if (shouldShow !== visible) setVisible(shouldShow);
+    },
+    [visible]
+  );
 
   return (
-    <header className="bg-green-600">
-      <div className="flex flex-wrap items-center justify-between lg:container px-4 py-6 mx-auto md:flex-no-wrap md:px-6">
-        <div className="flex items-center">
-          <Link href="/">
-            <a className="text-lg md:text-xl font-bold ml-3 text-white">
-              Hands On Workshop
-            </a>
-          </Link>
-        </div>
-      </div>
-    </header>
+    visible && (
+      <header className="border-b">
+        <Nav />
+      </header>
+    )
   );
 }
