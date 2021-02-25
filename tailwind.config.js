@@ -17,6 +17,10 @@ module.exports = {
       backgroundImage: () => ({
         "design-systems": "url('/balazs-ketyi-9VzoRKfBsMM-unsplash.jpg')",
       }),
+      spacing: {
+        "2/3": "66.666667%",
+        "1/1": "100%",
+      },
     },
   },
   plugins: [

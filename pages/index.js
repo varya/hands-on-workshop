@@ -52,7 +52,7 @@ export default function IndexPage() {
       </Hero>
       <SectionShape className="-mt-12 lg:-mt-24" />
       <Section>
-        <div className=" text-gray-600 text-center tracking-wider my-8">
+        <div className=" text-gray-600 text-center tracking-wider my-8  px-4">
           <p className=" text-xl leading-8 my-4">
             This workshop helps you learn and practice design systems working in
             a team. You can join as a designer or developer.
@@ -100,14 +100,14 @@ export default function IndexPage() {
               <li key="5">Coding the components</li>
             </ul>
           </TimelineItem>
-          <TimelineItem time="10:00" heading="">
+          <TimelineItem time="10:30" heading="">
             <ul className="list-disc list-inside">
               <li key="6">Coding the components</li>
               <li key="7">Building the product</li>
               <li key="8">Brand changes</li>
             </ul>
           </TimelineItem>
-          <TimelineItem time="10:00" heading="" align="end">
+          <TimelineItem time="13:00" heading="" align="end">
             <ul className="list-disc list-inside">
               <li>Running through the processes</li>
             </ul>
@@ -117,7 +117,7 @@ export default function IndexPage() {
       {/* CARDS SECTION */}
       <Section title="Why attend" className="bg-gray-100">
         <Card className="md:w-1/3">
-          <DesignIcon className="w-full h-full px-8 pb-8 pt-4" />
+          <DesignIcon className="w-full h-full px-16 md:px-8 pb-8 pt-4" />
           <ul className="list-disc list-inside">
             <li key="9" className="pb-2">
               Practice UI inventory{" "}
@@ -262,24 +262,30 @@ export default function IndexPage() {
       <Section
         wide
         title="Companies that use design systems"
+        titleDecoration={false}
         className="border-transparent"
       >
         <div className="relative bg-design-systems bg-center flex w-full py-8">
           <div className="absolute top-0 right-0 bottom-0 left-0 bg-gray-200 opacity-75" />
-          <div className="container flex flex-wrap max-w-5-xl mx-auto z-10">
+          <div className="container flex flex-wrap max-w-5-xl mx-auto z-10 justify-between">
             {[
               Microsoft,
-              IBM,
               Spotify,
-              Yandex,
               Atlassian,
+              Yandex,
               Airbnb,
               Salesforce,
               Shopify,
+              IBM,
             ].map((Logo, i) => {
               return (
-                <div className="md:w-1/4 w-1/2 h-24" key={i + "_logo"}>
-                  {<Logo className="h-full w-full p-6 mt-3 mb-6" />}
+                <div className="md:w-1/4 w-1/2 h-24 flex" key={i + "_logo"}>
+                  {
+                    <Logo
+                      className="max-h-24 w-full px-8"
+                      preserveAspectRatio="xMidYMid"
+                    />
+                  }
                 </div>
               );
             })}

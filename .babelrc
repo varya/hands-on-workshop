@@ -1,4 +1,15 @@
 {
-  "presets": ["next/babel"],
+  "presets": [
+    [
+      "next/babel",
+      {
+        // see this: https://github.com/airbnb/babel-plugin-inline-react-svg/issues/91#issuecomment-736241122
+        /// can be removed after update
+        "preset-react": {
+          "runtime": "automatic"
+        }
+      }
+    ]
+  ],
   "plugins": [["babel-plugin-inline-react-svg", { "svgo": false }]]
 }

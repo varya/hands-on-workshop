@@ -15,11 +15,7 @@ const Button = React.forwardRef(({ variant, className, ...props }, ref) => {
     <button
       {...props}
       ref={ref}
-      className={clsx(
-        className,
-        "mx-auto lg:mx-0 hover:underline",
-        variants[variant]
-      )}
+      className={clsx(className, "hover:underline", variants[variant])}
     ></button>
   );
 });

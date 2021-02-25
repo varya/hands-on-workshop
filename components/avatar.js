@@ -1,15 +1,13 @@
-import Image from "next/image";
-
 export default function Avatar({ src, alt, size = 400 }) {
   return (
-    <Image
-      src={src}
-      alt={alt}
-      layout="responsive"
-      width={size}
-      height={size}
-      objectFit="cover"
-      className="rounded-full"
-    />
+    <div className="relative overflow-hidden pb-1/1">
+      <img
+        src={src}
+        alt={alt}
+        width={size}
+        height={size}
+        className="absolute rounded-full object-cover w-full h-full"
+      />
+    </div>
   );
 }
