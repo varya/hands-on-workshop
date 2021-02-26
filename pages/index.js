@@ -41,18 +41,19 @@ export default function IndexPage() {
         {/* <!--Right Col--> */}
         <div className="flex flex-col flex-grow w-full md:w-4/12 justify-center items-center text-center md:text-left">
           <p className="uppercase tracking-loose w-full text-center font-bold text-xl">
-            8-9 April 2021
+            {/* 8-9 April 2021
             <br />
-            10-13 EET
+            10-13 EET */}
+            Details coming soon, stay tuned!
           </p>
-          <Button variant="base" className="mb-0 mt-12" name="hero register">
+          {/* <Button variant="base" className="mb-0 mt-12" name="hero register">
             Register
-          </Button>
+          </Button> */}
         </div>
       </Hero>
       <SectionShape className="-mt-12 lg:-mt-24" />
       <Section>
-        <div className=" text-gray-600 text-center tracking-wider my-8  px-4">
+        <div className=" text-gray-600 text-justify tracking-wider my-8  px-4">
           <p className=" text-xl leading-8 my-4">
             This workshop helps you learn and practice design systems working in
             a team. You can join as a designer or developer.
@@ -74,7 +75,7 @@ export default function IndexPage() {
       </Section>
       <Section title="Workshop content">
         <h3 className="w-1/5 text-right font-bold text-gray-900 text-xl py-8">
-          April, 8
+          Day 1
         </h3>
         <Timeline>
           <TimelineItem time="10:00" heading="Introduction">
@@ -92,7 +93,7 @@ export default function IndexPage() {
           <TimelineItem time="14:00" heading="End of first day" align="end" />
         </Timeline>
         <h3 className="w-1/5 text-right font-bold text-gray-900 text-xl py-8">
-          April, 9
+          Day 2
         </h3>
         <Timeline>
           <TimelineItem time="10:00" heading="Production and Updates">
@@ -165,6 +166,9 @@ export default function IndexPage() {
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
             Varya Stepanova
           </h3>
+          <p className="uppercase w-full font-bold text-lg leading-loose text-gray-900">
+            Design systems architect
+          </p>
           <p className="text-gray-600 text-xl mb-8">
             Design systems architect with an extensive experience in management,
             design, and technical side.
@@ -197,9 +201,11 @@ export default function IndexPage() {
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
             Nikita Sherbakov
           </h3>
-          <p className="text-gray-600 mb-8">
+          <p className="uppercase w-full font-bold text-lg leading-loose text-gray-900">
             Software architect & senior frontend engineer
           </p>
+
+          <p className="text-gray-600 mb-8">{/* text here */}</p>
           <div className="flex">
             <a
               key="l-n"
@@ -223,7 +229,6 @@ export default function IndexPage() {
         </BlockImage>
       </Section>
 
-      <Section title="Custom version"></Section>
       <Section title="People say" className="bg-gray-100">
         <Testimonial author="Junaid Rasheed" dir="right">
           Varya is an expert in Design System domain. I have had chance to work
@@ -290,6 +295,21 @@ export default function IndexPage() {
               );
             })}
           </div>
+        </div>
+      </Section>
+
+      <Section title="Custom version" className="border-b-0">
+        <div className=" text-gray-600 text-justify tracking-wider my-8  px-4">
+          <p className=" text-xl leading-8 my-4">
+            Need a custom version? We can tailor this workshop for your company.
+            When focused on your product and taking into account your team
+            shape, the workshop outcome is not only a training session but also
+            your design system's kick-off. We’ll walk through the design system
+            process, how to get started and how to fit it into your existing
+            design processes. There will be an opportunity for the team to
+            discuss questions they might have about implementing a design
+            system.
+          </p>
         </div>
       </Section>
       <SectionShape className="transform rotate-180" />
