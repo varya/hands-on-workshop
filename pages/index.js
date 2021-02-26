@@ -1,6 +1,4 @@
 import React from "react";
-import { Experiment, Variant } from "react-optimize";
-const EXPERIMENT_ID = "new";
 
 import BlockImage from "@components/block-image";
 import Hero from "@components/hero";
