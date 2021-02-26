@@ -10,7 +10,11 @@ export default function Nav() {
           <span className="text-v-red">HANDS-ON WITH DESIGN SYSTEMS </span>
           <span className="text-v-yellow">WORKSHOP</span>
         </div>
-        <Button variant="gradient-small" className="my-0 text-sm">
+        <Button
+          name="header-register"
+          variant="gradient-small"
+          className="my-0 text-sm"
+        >
           Register
         </Button>
       </div>
