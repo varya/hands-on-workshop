@@ -305,7 +305,7 @@ export default function IndexPage() {
         </div>
       </Section>
 
-      <Section title="Custom version" className="border-b-0">
+      <Section title="Custom workshop version" className="border-b-0">
         <div className=" text-gray-600 text-justify tracking-wider my-8  px-4">
           <p className=" text-xl leading-8 my-4">
             Need a custom version? We can tailor this workshop for your company.
@@ -317,6 +317,8 @@ export default function IndexPage() {
             discuss questions they might have about implementing a design
             system.
           </p>
+          <p className="text-xl leading-8 my-4">Contact Varya by&nbsp;
+          <a className="text-v-dark-blue" href="mailto:mail@varya.me">mail@varya.me</a> to discuss your custom workshop details.</p>
         </div>
       </Section>
       <SectionShape className="transform rotate-180" />
