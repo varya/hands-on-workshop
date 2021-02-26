@@ -1,4 +1,6 @@
 import React from "react";
+import { Experiment, Variant } from "react-optimize";
+const EXPERIMENT_ID = "new";
 
 import BlockImage from "@components/block-image";
 import Hero from "@components/hero";
@@ -45,7 +47,7 @@ export default function IndexPage() {
             <br />
             10-13 EET
           </p>
-          <Button variant="base" className="mb-0 mt-12">
+          <Button variant="base" className="mb-0 mt-12" name="hero register">
             Register
           </Button>
         </div>
@@ -303,7 +305,10 @@ export default function IndexPage() {
         <p className="my-4 text-3xl leading-tight">
           Number of participants is limited, book your ticket in advance
         </p>
-        <Button className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+        <Button
+          name="bottom-register"
+          className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+        >
           Register
         </Button>
       </section>
