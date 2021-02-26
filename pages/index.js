@@ -167,11 +167,13 @@ export default function IndexPage() {
             Varya Stepanova
           </h3>
           <p className="uppercase w-full font-bold text-lg leading-loose text-gray-900">
-            Design systems architect
+            Design systems architect and engineering manager
           </p>
           <p className="text-gray-600 text-xl mb-8">
-            Design systems architect with an extensive experience in management,
-            design, and technical side.
+            As an independent consultant, Varya helps companies to launch and boost
+            their design systems. Her major focus is bridging the gap for designers,
+            developers, and business specialists. That all is seasoned with extensive
+            experience in component-driven UI development and a design degree.
           </p>
           <div className="flex">
             <a
@@ -205,7 +207,12 @@ export default function IndexPage() {
             Software architect & senior frontend engineer
           </p>
 
-          <p className="text-gray-600 mb-8">{/* text here */}</p>
+          <p className="text-gray-600 text-xl mb-8">
+            Nikita has 10+ years of experience building web projects of different kinds,
+            starting from small websites to Design Systems and complex web services.
+            He can help with creating and maintaining frontend architecture, tuning
+            the automations and sharing the processes.
+          </p>
           <div className="flex">
             <a
               key="l-n"
@@ -298,7 +305,7 @@ export default function IndexPage() {
         </div>
       </Section>
 
-      <Section title="Custom version" className="border-b-0">
+      <Section title="Custom workshop version" className="border-b-0">
         <div className=" text-gray-600 text-justify tracking-wider my-8  px-4">
           <p className=" text-xl leading-8 my-4">
             Need a custom version? We can tailor this workshop for your company.
@@ -310,6 +317,8 @@ export default function IndexPage() {
             discuss questions they might have about implementing a design
             system.
           </p>
+          <p className="text-xl leading-8 my-4">Contact Varya by&nbsp;
+          <a className="text-v-dark-blue" href="mailto:mail@varya.me">mail@varya.me</a> to discuss your custom workshop details.</p>
         </div>
       </Section>
       <SectionShape className="transform rotate-180" />
