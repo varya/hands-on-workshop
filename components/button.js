@@ -13,25 +13,28 @@ const variants = {
     "gradient-simple text-white font-bold rounded-full py-2 px-4 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out",
 };
 
-// const Button = React.forwardRef(
-//   ({ variant, className, name, ...props }, ref) => {
-//     const sendLog = () => {
-//       ReactGA.event({
-//         category: "REGISTRATION",
-//         action: "Click",
-//         label: name,
-//       });
-//     };
-//     return (
-//       <button
-//         {...props}
-//         ref={ref}
-//         onClick={() => sendLog()}
-//         className={clsx(className, "hover:underline", variants[variant])}
-//       ></button>
-//     );
-//   }
-// );
+const Button = React.forwardRef(
+  ({ variant, className, name, onClick, ...props }, ref) => {
+    const sendLog = () => {
+      ReactGA.event({
+        category: "REGISTRATION",
+        action: "Click",
+        label: name,
+      });
+    };
+    return (
+      <button
+        {...props}
+        ref={ref}
+        onClick={() => {
+          onClick && onClick();
+          sendLog();
+        }}
+        className={clsx(className, "hover:underline", variants[variant])}
+      ></button>
+    );
+  }
+);
 
-const Button = () => <div className="text-lg py-3"> COMING SOON</div>;
+// const Button = () => <div className="text-lg py-3"> COMING SOON</div>;
 export default Button;
