@@ -42,6 +42,9 @@ export default function IndexPage() {
         {/* <!--Right Col--> */}
         <div className="flex flex-col flex-grow w-full md:w-4/12 justify-center items-center text-center md:text-left">
           <p className="uppercase tracking-loose w-full text-center font-bold text-xl">
+          8 & 9 April
+          </p>
+          <p className="uppercase tracking-loose w-full text-center font-bold text-xl">
             <LocalTime start={10} end={13} />
             {/* Details coming soon, stay tuned! */}
           </p>
