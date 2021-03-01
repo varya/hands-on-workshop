@@ -15,14 +15,9 @@ const Triangle = ({ dir = "left" }) => (
   />
 );
 
-export default function Testimonial({
-  author,
-  children,
-  width = "1/2",
-  dir = "left",
-}) {
+export default function Testimonial({ author, children, dir = "left" }) {
   return (
-    <div className={`md:w-${width} flex flex-col flex-grow flex-shrink`}>
+    <div className="md:w-1/2 flex flex-col flex-grow flex-shrink">
       <Card className="flex-1">
         <div className="flex flex-col h-full relative">
           <p className="text-gray-800 z-10 italic text-center text-l">

@@ -22,7 +22,9 @@ export const TimelineItem = ({ time, heading, children, align = "start" }) => {
         "flex w-full"
       )}
     >
-      <div className="w-1/5 flex-0 text-gray-400 text-right pr-6">{time}</div>
+      <div className="w-1/5 flex-0 text-gray-400 text-right leading-none pr-6">
+        {time}
+      </div>
       <div className="z-20 flex items-center w-5 h-5 bg-v-red shadow-xl rounded-full transform -translate-x-2 origin-center">
         <div className="z-30 w-3 h-3 m-auto bg-white  shadow-xl rounded-full" />
       </div>
