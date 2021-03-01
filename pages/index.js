@@ -9,6 +9,7 @@ import Card from "@components/card";
 import Button from "@components/button";
 import Timeline, { TimelineItem } from "@components/timeline";
 import Testimonial from "@components/testimonials";
+import LocalTime from "@components/local-time";
 
 import DesignIcon from "../public/sketch.svg";
 import DevIcon from "../public/web-development.svg";
@@ -41,10 +42,7 @@ export default function IndexPage() {
         {/* <!--Right Col--> */}
         <div className="flex flex-col flex-grow w-full md:w-4/12 justify-center items-center text-center md:text-left">
           <p className="uppercase tracking-loose w-full text-center font-bold text-xl">
-            {/* 8-9 April 2021
-            <br />
-            10-13 EET */}
-            Details coming soon, stay tuned!
+            <LocalTime start={10} end={13} />
           </p>
           {/* <Button variant="base" className="mb-0 mt-12" name="hero register">
             Register
