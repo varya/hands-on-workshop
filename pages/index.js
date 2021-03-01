@@ -43,10 +43,16 @@ export default function IndexPage() {
         <div className="flex flex-col flex-grow w-full md:w-4/12 justify-center items-center text-center md:text-left">
           <p className="uppercase tracking-loose w-full text-center font-bold text-xl">
             <LocalTime start={10} end={13} />
+            {/* Details coming soon, stay tuned! */}
           </p>
-          {/* <Button variant="base" className="mb-0 mt-12" name="hero register">
+          <Button
+            variant="base"
+            className="mb-0 mt-12"
+            name="hero register"
+            onClick={() => location.href='https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461'}
+            >
             Register
-          </Button> */}
+          </Button>
         </div>
       </Hero>
       <SectionShape className="-mt-12 lg:-mt-24" />
@@ -333,6 +339,7 @@ export default function IndexPage() {
         <Button
           name="bottom-register"
           className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          onClick={() => location.href='https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461'}
         >
           Register
         </Button>
