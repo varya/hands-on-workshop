@@ -128,7 +128,7 @@ export default function IndexPage() {
       {/* CARDS SECTION */}
       <Section title="Why attend" className="bg-gray-100">
         <Card className="md:w-1/3">
-          <DesignIcon className="w-full h-full px-16 md:px-8 pb-8 pt-4" />
+          <DesignIcon className="w-full h-full max-h-64 px-16 md:px-8 pb-8 pt-4" />
           <ul className="list-disc list-inside">
             <li key="9" className="pb-2">
               Practice UI inventory{" "}
@@ -142,7 +142,7 @@ export default function IndexPage() {
           </ul>
         </Card>
         <Card className="md:w-1/3">
-          <DevIcon className="w-full h-full px-8 pb-8 pt-4" />
+          <DevIcon className="w-full h-full max-h-64 px-8 pb-8 pt-4" />
           <ul className="list-disc list-inside">
             <li key="12" className="pb-2">
               Component-driven development
@@ -156,7 +156,7 @@ export default function IndexPage() {
           </ul>
         </Card>
         <Card className="md:w-1/3">
-          <ProcessIcon className="w-full h-full px-8 pb-8 pt-4" />
+          <ProcessIcon className="w-full h-full max-h-64 px-8 pb-8 pt-4" />
           <ul className="list-disc list-inside">
             <li key="15" className="pb-2">
               Automate design and development processes
