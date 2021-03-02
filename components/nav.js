@@ -14,6 +14,10 @@ export default function Nav() {
           name="header-register"
           variant="gradient-small"
           className="my-0 text-sm"
+          onClick={() =>
+            (location.href =
+              "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
+          }
         >
           Register
         </Button>
