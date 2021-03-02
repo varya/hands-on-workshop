@@ -5,10 +5,12 @@ export default function Nav() {
       id="header"
       className="fixed w-full z-30 top-0 bg-white border-bshadow"
     >
-      <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
+      <div className="w-full container max-w-5xl mx-auto px-3 flex flex-wrap items-center justify-between mt-0 py-2">
         <div>
-          <span className="text-v-red">HANDS-ON WITH DESIGN SYSTEMS </span>
-          <span className="text-v-yellow">WORKSHOP</span>
+          <span className="text-v-red text-sm sm:text-base">
+            HANDS-ON WITH DESIGN SYSTEMS{" "}
+          </span>
+          <span className="text-v-yellow hidden sm:inline">WORKSHOP</span>
         </div>
         <Button
           name="header-register"
