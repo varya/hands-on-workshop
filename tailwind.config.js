@@ -39,4 +39,13 @@ module.exports = {
       addUtilities(utilities, variants("borderColor"));
     },
   ],
+  variants: {
+    extend: {
+      transform: ["group-hover"],
+      transitionDuration: ["group-hover"],
+      transitionProperty: ["group-hover"],
+      translate: ["group-hover"],
+      scale: ["group-hover"],
+    },
+  },
 };
