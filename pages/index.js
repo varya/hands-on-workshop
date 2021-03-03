@@ -45,7 +45,11 @@ export default function IndexPage() {
           8 & 9 April
           </p>
           <p className="uppercase tracking-loose w-full text-center font-bold text-xl">
-            <LocalTime start={10} end={13} />
+            <LocalTime
+              start={11}
+              end={15}
+              format="%start%-%end% %timezone%"
+              />
             {/* Details coming soon, stay tuned! */}
           </p>
           <Button
@@ -85,41 +89,63 @@ export default function IndexPage() {
           Day 1
         </h3>
         <Timeline>
-          <TimelineItem time="10:00" heading="Introduction">
+          <TimelineItem time={(<LocalTime
+              start={11}
+              format="%start%:00"
+              />)} heading="Introduction">
             <ul className="list-disc list-inside">
               <li key="1">What are design systems</li>
               <li key="2">Technologies to support design systems</li>
             </ul>
           </TimelineItem>
-          <TimelineItem time="11:00" heading="Design and Process">
+          <TimelineItem time={(<LocalTime
+              start={12}
+              format="%start%:00"
+              />)} heading="Design and Process">
             <ul className="list-disc list-inside">
               <li key="3">UI inventory and scoping</li>
               <li key="4">Coding first components together</li>
             </ul>
           </TimelineItem>
-          <TimelineItem time="14:00" heading="End of first day" align="end" />
-        </Timeline>
+          <TimelineItem time={(<LocalTime
+              start={15}
+              format="%start%:00"
+              />)} heading="End of first day" align="end" />
+          </Timeline>
         <h3 className="w-1/5 text-right font-bold text-gray-900 text-xl py-8">
           Day 2
         </h3>
         <Timeline>
-          <TimelineItem time="10:00" heading="Production and Updates">
+          <TimelineItem time={(<LocalTime
+              start={11}
+              format="%start%:00"
+              />)} heading="Production and Updates">
             <ul className="list-disc list-inside">
               <li key="5">Coding the components</li>
             </ul>
           </TimelineItem>
-          <TimelineItem time="10:30" heading="">
+          <TimelineItem time={(<LocalTime
+              start={11}
+              format="%start%:30"
+              />)} heading="Design system in action">
             <ul className="list-disc list-inside">
               <li key="6">Coding the components</li>
               <li key="7">Building the product</li>
               <li key="8">Brand changes</li>
             </ul>
           </TimelineItem>
-          <TimelineItem time="13:00" heading="" align="end">
+          <TimelineItem time={(<LocalTime
+              start={14}
+              format="%start%:00"
+              />)} heading="Running through the processes">
             <ul className="list-disc list-inside">
-              <li>Running through the processes</li>
+              <li>Recap</li>
             </ul>
           </TimelineItem>
+          <TimelineItem time={(<LocalTime
+              start={15}
+              format="%start%:00"
+              />)} heading="End of the workshop" align="end" />
         </Timeline>
       </Section>
       {/* CARDS SECTION */}

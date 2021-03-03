@@ -11,12 +11,15 @@ function getTimezoneAbbr(tzOffset) {
       return "EET";
   }
 }
-export default function LocalTime({ start, end }) {
+export default function LocalTime({ start, end, format = "%start%-%end% %timezone%" }) {
   const tzOffset = -new Date().getTimezoneOffset() / 60;
   if (tzOffset >= 0 && tzOffset <= 3) {
     start = start - 2 + tzOffset;
     end = end - 2 + tzOffset;
   }
   const zoneAbbr = getTimezoneAbbr(tzOffset);
-  return `${start}-${end} ${zoneAbbr}`;
+  return format
+          .replace('%start%', start)
+          .replace('%end%', end)
+          .replace('%timezone%', zoneAbbr);
 }
