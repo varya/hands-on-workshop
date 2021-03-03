@@ -256,7 +256,7 @@ export default function IndexPage() {
             <a
               key="l-n"
               className="mr-4 cursor-pointer flex"
-              href="https://linkedin.com/in/nikita-sherbakov"
+              href="https://www.linkedin.com/in/salehsherif/"
             >
               <LinkedinIcon
                 height="30"
@@ -264,7 +264,7 @@ export default function IndexPage() {
                 className="hover:opacity-50"
               />
             </a>
-            <a key="t-v" href="https://twitter.com/sherbakovdev">
+            <a key="t-v" href="https://twitter.com/sans_sherif">
               <TwitterIcon
                 className="hover:opacity-50"
                 height="30"
