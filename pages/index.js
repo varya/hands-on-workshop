@@ -42,7 +42,7 @@ export default function IndexPage() {
         {/* <!--Right Col--> */}
         <div className="flex flex-col flex-grow w-full md:w-4/12 justify-center items-center text-center md:text-left">
           <p className="uppercase tracking-loose w-full text-center font-bold text-xl">
-          8 & 9 April
+            8 & 9 April
           </p>
           <p className="uppercase tracking-loose w-full text-center font-bold text-xl">
             <LocalTime start={10} end={13} />
@@ -52,8 +52,11 @@ export default function IndexPage() {
             variant="base"
             className="mb-0 mt-12"
             name="hero register"
-            onClick={() => location.href='https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461'}
-            >
+            onClick={() =>
+              (location.href =
+                "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
+            }
+          >
             Register
           </Button>
         </div>
@@ -125,7 +128,7 @@ export default function IndexPage() {
       {/* CARDS SECTION */}
       <Section title="Why attend" className="bg-gray-100">
         <Card className="md:w-1/3">
-          <DesignIcon className="w-full h-full px-16 md:px-8 pb-8 pt-4" />
+          <DesignIcon className="w-full h-full max-h-64 px-16 md:px-8 pb-8 pt-4" />
           <ul className="list-disc list-inside">
             <li key="9" className="pb-2">
               Practice UI inventory{" "}
@@ -139,7 +142,7 @@ export default function IndexPage() {
           </ul>
         </Card>
         <Card className="md:w-1/3">
-          <DevIcon className="w-full h-full px-8 pb-8 pt-4" />
+          <DevIcon className="w-full h-full max-h-64 px-8 pb-8 pt-4" />
           <ul className="list-disc list-inside">
             <li key="12" className="pb-2">
               Component-driven development
@@ -153,7 +156,7 @@ export default function IndexPage() {
           </ul>
         </Card>
         <Card className="md:w-1/3">
-          <ProcessIcon className="w-full h-full px-8 pb-8 pt-4" />
+          <ProcessIcon className="w-full h-full max-h-64 px-8 pb-8 pt-4" />
           <ul className="list-disc list-inside">
             <li key="15" className="pb-2">
               Automate design and development processes
@@ -177,10 +180,11 @@ export default function IndexPage() {
             Design systems architect and engineering manager
           </p>
           <p className="text-gray-600 text-xl mb-8">
-            As an independent consultant, Varya helps companies to launch and boost
-            their design systems. Her major focus is bridging the gap for designers,
-            developers, and business specialists. That all is seasoned with extensive
-            experience in component-driven UI development and a design degree.
+            As an independent consultant, Varya helps companies to launch and
+            boost their design systems. Her major focus is bridging the gap for
+            designers, developers, and business specialists. That all is
+            seasoned with extensive experience in component-driven UI
+            development and a design degree.
           </p>
           <div className="flex">
             <a
@@ -215,10 +219,11 @@ export default function IndexPage() {
           </p>
 
           <p className="text-gray-600 text-xl mb-8">
-            Nikita has 10+ years of experience building web projects of different kinds,
-            starting from small websites to Design Systems and complex web services.
-            He can help with creating and maintaining frontend architecture, tuning
-            the automations and sharing the processes.
+            Nikita has 10+ years of experience building web projects of
+            different kinds, starting from small websites to Design Systems and
+            complex web services. He can help with creating and maintaining
+            frontend architecture, tuning the automations and sharing the
+            processes.
           </p>
           <div className="flex">
             <a
@@ -278,6 +283,7 @@ export default function IndexPage() {
           happily serve as a reference!
         </Testimonial>
       </Section>
+      {/* LOGO SECTION */}
       <Section
         wide
         title="Companies that use design systems"
@@ -286,7 +292,7 @@ export default function IndexPage() {
       >
         <div className="relative bg-design-systems bg-center flex w-full py-8">
           <div className="absolute top-0 right-0 bottom-0 left-0 bg-gray-200 opacity-75" />
-          <div className="container flex flex-wrap max-w-5-xl mx-auto z-10 justify-between">
+          <div className="container flex flex-wrap max-w-5xl mx-auto z-10 justify-between">
             {[
               Microsoft,
               Spotify,
@@ -324,8 +330,13 @@ export default function IndexPage() {
             discuss questions they might have about implementing a design
             system.
           </p>
-          <p className="text-xl leading-8 my-4">Contact Varya by&nbsp;
-          <a className="text-v-dark-blue" href="mailto:mail@varya.me">mail@varya.me</a> to discuss your custom workshop details.</p>
+          <p className="text-xl leading-8 my-4">
+            Contact Varya by&nbsp;
+            <a className="text-v-dark-blue" href="mailto:mail@varya.me">
+              mail@varya.me
+            </a>{" "}
+            to discuss your custom workshop details.
+          </p>
         </div>
       </Section>
       <SectionShape className="transform rotate-180" />
@@ -342,7 +353,10 @@ export default function IndexPage() {
         <Button
           name="bottom-register"
           className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
-          onClick={() => location.href='https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461'}
+          onClick={() =>
+            (location.href =
+              "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
+          }
         >
           Register to the workshop
         </Button>
