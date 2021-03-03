@@ -198,7 +198,7 @@ export default function IndexPage() {
       </Section>
 
       <Section title="Who we are">
-        <BlockImage image={<Avatar src="/varya.jpg" alt="Varya avatar" />}>
+        <BlockImage image={<Avatar src="/varya.jpg" alt="Varya Stepanova" />}>
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
             Varya Stepanova
           </h3>
@@ -235,7 +235,46 @@ export default function IndexPage() {
         </BlockImage>
         <BlockImage
           reverse
-          image={<Avatar src="/nikita.jpg" alt="Nikita avatar" />}
+          image={<Avatar src="/sherif.jpg" alt="Sherif Saleh" />}
+        >
+          <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+            Sherif Saleh
+          </h3>
+          <p className="uppercase w-full font-bold text-lg leading-loose text-gray-900">
+            Senior product designer
+          </p>
+
+          <p className="text-gray-600 text-xl mb-8">
+            Sherif is a senior product designer. He crafts deligthful experiences
+            through data analytics, user research, prototypes, and validation.
+            Sherif has extensive experience with design systems and years of
+            working for financial services, banks, and automotive.
+
+
+          </p>
+          <div className="flex">
+            <a
+              key="l-n"
+              className="mr-4 cursor-pointer flex"
+              href="https://linkedin.com/in/nikita-sherbakov"
+            >
+              <LinkedinIcon
+                height="30"
+                width="30"
+                className="hover:opacity-50"
+              />
+            </a>
+            <a key="t-v" href="https://twitter.com/sherbakovdev">
+              <TwitterIcon
+                className="hover:opacity-50"
+                height="30"
+                width="30"
+              />
+            </a>
+          </div>
+        </BlockImage>
+        <BlockImage
+          image={<Avatar src="/nikita.jpg" alt="Nikita Sharbakov" />}
         >
           <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
             Nikita Sherbakov
@@ -283,6 +322,21 @@ export default function IndexPage() {
           just defining it well. I would gladly recommend Varya to anyone who is
           looking for a Design System expert.
         </Testimonial>
+        <Testimonial author="Ekaterina Blake">
+          Nikita is an extremely skilled web programmer and a wonderful person
+          to work with. His ability to efficiently understand, communicate, and
+          execute requested adjustments is superior. His experience is
+          recognized in the functionality, proficiency, and competency that is
+          reflected in each completed task. He also cares about his client and
+          takes the time to handle every question and concern right down to the
+          last detail. I highly recommend Nikita for any programming need and
+          happily serve as a reference!
+        </Testimonial>
+        <Testimonial author="Anthony Tahar" dir="right">
+          Sherif is a proactive and tireless contributor who would make a great
+          addition to any team. He completed his assignments on time and never
+          failed to add a creative touch when appropriate.
+        </Testimonial>
         <Testimonial author="Alexander Petrovsky">
           Varya is a highly skilled professional designer and developer. Along
           with these qualities, she is a great leader, a team player, and a
@@ -296,17 +350,12 @@ export default function IndexPage() {
           nicely combine front-end development with UX design. I had the
           pleasure of working with Nikita in a team responsible for developing a
           fairly complex product where he was able to show the power to those
-          two combined with very good results
+          two combined with very good results.
         </Testimonial>
-        <Testimonial author="Ekaterina Blake">
-          Nikita is an extremely skilled web programmer and a wonderful person
-          to work with. His ability to efficiently understand, communicate, and
-          execute requested adjustments is superior. His experience is
-          recognized in the functionality, proficiency, and competency that is
-          reflected in each completed task. He also cares about his client and
-          takes the time to handle every question and concern right down to the
-          last detail. I highly recommend Nikita for any programming need and
-          happily serve as a reference!
+        <Testimonial author="David Teissier">
+          Sherif was a true professional in his business. Great skills in web
+          design and UX. CSS has no secrets for him also. We worked together on
+          web projects to large sizes.
         </Testimonial>
       </Section>
       {/* LOGO SECTION */}
