@@ -49,6 +49,14 @@ class MyDocument extends Document {
           <script
             src={`https://www.googleoptimize.com/optimize.js?id=${OPT_CONTAINER_ID}`}
           ></script>
+          {/* OG tags */}
+          <meta property="og:title" content="Hands-on with Design Systems: 2-day workshop with Figma & React" />
+          <meta property="og:url" content="https://hands-on-workshop.varya.me/" />
+          <meta property="og:image" content="https://hands-on-workshop.varya.me/poster.png" />
+          <meta property="og:type" content="website" />
+          <meta property="og:description" content="This workshop helps you learn and practice design systems working in a team. You can join as a designer or developer." />
+          <meta property="og:locale" content="en_GB" />
+
         </Head>
         <body className="leading-normal tracking-normal text-white gradient">
           <Main />
