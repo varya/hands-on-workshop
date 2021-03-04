@@ -35,8 +35,8 @@ export default function IndexPage() {
             Hands-on with Design Systems
           </h1>
           <p className="leading-normal text-2xl mb-8">
-            2-day workshop about building a design system with Figma and React
-            in a team
+            2-day workshop on building a design system with Figma and React.
+            Join as a designer or as a developer to work as a team.
           </p>
         </div>
         {/* <!--Right Col--> */}
