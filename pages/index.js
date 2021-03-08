@@ -61,7 +61,7 @@ export default function IndexPage() {
                 "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
             }
           >
-            Register
+            Register for €310 (incl. VAT)
           </Button>
         </div>
       </Hero>
@@ -423,10 +423,10 @@ export default function IndexPage() {
           <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
         </div>
         <p className="my-4 text-3xl leading-tight">
-          10 early-bird tickets (before the 22nd of March) for €250 + VAT 24%
+          10 early-bird tickets (before the 22nd of March) for €310 (incl. VAT 24%)
         </p>
         <p className="my-4 text-3xl leading-tight">
-          10 regular price tickets for €350 + VAT 24%
+          10 regular price tickets for €434 (incl. VAT 24%)
         </p>
         <Button
           name="bottom-register"

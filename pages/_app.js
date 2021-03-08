@@ -6,11 +6,13 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
+
         <title>Hands-on with design systems workshop</title>
         <meta
           name="Description"
           content="This workshop helps you learn and practice design systems working in a team. You can join as a designer or developer."
         />
+
         {/* OG tags */}
         <meta property="og:title" content="Hands-on with Design Systems: 2-day workshop with Figma & React" />
         <meta property="og:url" content="https://hands-on-workshop.varya.me/" />
@@ -20,8 +22,9 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:locale" content="en_GB" />
 
         <meta name="description" content="Hands-on with Design Systems: 2-day workshop with Figma & React. This workshop helps you learn and practice design systems working in a team. You can join as a designer or developer." />
-        <meta name="keywords" content="design systems, workshop, team work, ReactJS, Figma, styled-components, Storybook, design, frontend, development"/>
+        <meta name="keywords" content="design systems, workshop, team work, ReactJS, Figma, styled-components, Storybook, design, frontend, development" />
         <meta name="robots" content="index, follow" />
+
       </Head>
 
       <Component {...pageProps} />
