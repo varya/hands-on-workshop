@@ -81,7 +81,7 @@ export default function IndexPage() {
             with the design reality.
           </p>
           <p className=" text-xl leading-8 my-4">
-            By the end of the day, each team has a ready-to-use component
+            By the end of the workshop, each team has a ready-to-use component
             library, an end product built out of that, and a tuned process to
             ensure smooth updates.
           </p>
@@ -153,6 +153,14 @@ export default function IndexPage() {
               format="%start%:00"
               />)} heading="End of the workshop" align="end" />
         </Timeline>
+        <div className=" text-gray-600 text-justify tracking-wider my-8 px-4">
+          <p className=" text-xl leading-8 my-4 px-40">
+            By the end of the workshop, each team has a ready-to-use component
+            library, an end product built out of that, and a tuned process to
+            ensure smooth updates.
+          </p>
+        </div>
+
       </Section>
       {/* CARDS SECTION */}
       <Section title="Why attend" className="bg-gray-100">
