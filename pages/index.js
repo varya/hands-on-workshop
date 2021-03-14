@@ -107,7 +107,9 @@ export default function IndexPage() {
               />)} heading="Design and Process">
             <ul className="list-disc list-inside">
               <li key="3">UI inventory and scoping</li>
-              <li key="4">Coding first components together</li>
+              <li key="4">Structure of Figma library</li>
+              <li key="5">Designing and coding first components together</li>
+              <li key="6">Design&code automatic sync</li>
             </ul>
           </TimelineItem>
           <TimelineItem time={(<LocalTime
@@ -122,19 +124,20 @@ export default function IndexPage() {
           <TimelineItem time={(<LocalTime
               start={11}
               format="%start%:00"
-              />)} heading="Production and Updates">
+              />)} heading="Design system in action">
             <ul className="list-disc list-inside">
-              <li key="5">Coding the components</li>
+              <li key="7">Patterns and components in Figma</li>
+              <li key="8">Coding the library of components</li>
+              <li key="9">Building the product using DS</li>
             </ul>
           </TimelineItem>
           <TimelineItem time={(<LocalTime
-              start={11}
-              format="%start%:30"
+              start={13}
+              format="%start%:00"
               />)} heading="Design system in action">
             <ul className="list-disc list-inside">
-              <li key="6">Coding the components</li>
-              <li key="7">Building the product</li>
-              <li key="8">Brand changes</li>
+              <li key="10">Brand changes to the library</li>
+              <li key="11">Automatic product update</li>
             </ul>
           </TimelineItem>
           <TimelineItem time={(<LocalTime
