@@ -185,8 +185,6 @@ export default function IndexPage() {
           ></iframe>
         </div>
       </Section>
-
-      </Section>
       {/* CARDS SECTION */}
       <Section title="Why attend" className="bg-gray-100">
         <Card className="md:w-1/3">
