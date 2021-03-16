@@ -30,31 +30,27 @@ export default function IndexPage() {
     <>
       <Hero>
         {/* <!--Left Col--> */}
-        <div className="flex flex-col flex-grow w-full md:w-8/12 justify-center items-center text-center md:text-left mt-12">
+        <div className="flex flex-col items-center justify-center flex-grow w-full mt-12 text-center md:w-8/12 md:text-left">
           <h1 className="my-4 text-5xl font-bold leading-tight">
             Hands-on with Design Systems
           </h1>
-          <p className="leading-normal text-2xl mb-8">
+          <p className="mb-8 text-2xl leading-normal">
             2-day workshop on building a design system with Figma and React.
             Join as a designer or as a developer to work as a team.
           </p>
         </div>
         {/* <!--Right Col--> */}
-        <div className="flex flex-col flex-grow w-full md:w-4/12 justify-center items-center text-center md:text-left">
-          <p className="uppercase tracking-loose w-full text-center font-bold text-xl">
+        <div className="flex flex-col items-center justify-center flex-grow w-full text-center md:w-4/12 md:text-left">
+          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
             8 & 9 April
           </p>
-          <p className="uppercase tracking-loose w-full text-center font-bold text-xl">
-            <LocalTime
-              start={11}
-              end={15}
-              format="%start%-%end% %timezone%"
-              />
+          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+            <LocalTime start={11} end={15} format="%start%-%end% %timezone%" />
             {/* Details coming soon, stay tuned! */}
           </p>
           <Button
             variant="base"
-            className="mb-0 mt-12"
+            className="mt-12 mb-0"
             name="hero register"
             onClick={() =>
               (location.href =
@@ -67,12 +63,12 @@ export default function IndexPage() {
       </Hero>
       <SectionShape className="-mt-12 lg:-mt-24" />
       <Section>
-        <div className=" text-gray-600 text-justify tracking-wider my-8  px-4">
-          <p className=" text-xl leading-8 my-4">
+        <div className="px-4 my-8 tracking-wider text-justify text-gray-600 ">
+          <p className="my-4 text-xl leading-8 ">
             This workshop helps you learn and practice design systems working in
             a team. You can join as a designer or developer.
           </p>
-          <p className=" text-xl leading-8 my-4">
+          <p className="my-4 text-xl leading-8 ">
             The designers define visual design language and Figma components. At
             the same time, the developers create the components with React. You
             practice iterative component-driven design and development and
@@ -80,7 +76,7 @@ export default function IndexPage() {
             contains managing collaborative updates and keeping the code in sync
             with the design reality.
           </p>
-          <p className=" text-xl leading-8 my-4">
+          <p className="my-4 text-xl leading-8 ">
             By the end of the workshop, each team has a ready-to-use component
             library, an end product built out of that, and a tuned process to
             ensure smooth updates.
@@ -88,23 +84,23 @@ export default function IndexPage() {
         </div>
       </Section>
       <Section title="Workshop content">
-        <h3 className="w-1/5 text-right font-bold text-gray-900 text-xl py-8">
+        <h3 className="w-1/5 py-8 text-xl font-bold text-right text-gray-900">
           Day 1
         </h3>
         <Timeline>
-          <TimelineItem time={(<LocalTime
-              start={11}
-              format="%start%:00"
-              />)} heading="Introduction">
+          <TimelineItem
+            time={<LocalTime start={11} format="%start%:00" />}
+            heading="Introduction"
+          >
             <ul className="list-disc list-inside">
               <li key="1">What are design systems</li>
               <li key="2">Technologies to support design systems</li>
             </ul>
           </TimelineItem>
-          <TimelineItem time={(<LocalTime
-              start={12}
-              format="%start%:00"
-              />)} heading="Design and Process">
+          <TimelineItem
+            time={<LocalTime start={12} format="%start%:00" />}
+            heading="Design and Process"
+          >
             <ul className="list-disc list-inside">
               <li key="3">UI inventory and scoping</li>
               <li key="4">Structure of Figma library</li>
@@ -112,53 +108,54 @@ export default function IndexPage() {
               <li key="6">Design&code automatic sync</li>
             </ul>
           </TimelineItem>
-          <TimelineItem time={(<LocalTime
-              start={15}
-              format="%start%:00"
-              />)} heading="End of first day" align="end" />
-          </Timeline>
-        <h3 className="w-1/5 text-right font-bold text-gray-900 text-xl py-8">
+          <TimelineItem
+            time={<LocalTime start={15} format="%start%:00" />}
+            heading="End of first day"
+            align="end"
+          />
+        </Timeline>
+        <h3 className="w-1/5 py-8 text-xl font-bold text-right text-gray-900">
           Day 2
         </h3>
         <Timeline>
-          <TimelineItem time={(<LocalTime
-              start={11}
-              format="%start%:00"
-              />)} heading="Design system in action">
+          <TimelineItem
+            time={<LocalTime start={11} format="%start%:00" />}
+            heading="Design system in action"
+          >
             <ul className="list-disc list-inside">
               <li key="7">Patterns and components in Figma</li>
               <li key="8">Coding the library of components</li>
               <li key="9">Building the product using DS</li>
             </ul>
           </TimelineItem>
-          <TimelineItem time={(<LocalTime
-              start={13}
-              format="%start%:00"
-              />)} heading="Design system in action">
+          <TimelineItem
+            time={<LocalTime start={13} format="%start%:00" />}
+            heading="Design system in action"
+          >
             <ul className="list-disc list-inside">
               <li key="10">Brand changes to the library</li>
               <li key="11">Automatic product update</li>
             </ul>
           </TimelineItem>
-          <TimelineItem time={(<LocalTime
-              start={14}
-              format="%start%:00"
-              />)} heading="Running through the processes">
+          <TimelineItem
+            time={<LocalTime start={14} format="%start%:00" />}
+            heading="Running through the processes"
+          >
             <ul className="list-disc list-inside">
               <li>Recap</li>
             </ul>
           </TimelineItem>
-          <TimelineItem time={(<LocalTime
-              start={15}
-              format="%start%:00"
-              />)} heading="End of the workshop" align="end" />
+          <TimelineItem
+            time={<LocalTime start={15} format="%start%:00" />}
+            heading="End of the workshop"
+            align="end"
+          />
         </Timeline>
-
       </Section>
-       {/* RESULT SECTION */}
+      {/* RESULT SECTION */}
       <Section title="Deliverables" className="bg-gray-100">
-        <div className="text-gray-600 text-justify tracking-wider my-8 px-4">
-          <p className="text-xl leading-8 my-4">
+        <div className="px-4 my-8 tracking-wider text-justify text-gray-600">
+          <p className="my-4 text-xl leading-8">
             By the end of the workshop, each team has a ready-to-use component
             library, an end product built out of that, and a tuned process to
             ensure smooth updates.
@@ -167,8 +164,8 @@ export default function IndexPage() {
       </Section>
       {/* VIDEO SECTION */}
       <Section title="Sneak peek">
-        <div className="text-gray-600 text-justify tracking-wider my-8 px-4">
-          <p className="text-xl leading-8 my-4">
+        <div className="px-4 my-8 tracking-wider text-justify text-gray-600">
+          <p className="my-4 text-xl leading-8">
             Changes in Figma design tokens are automatically reflected in the
             components and exported to code.
           </p>
@@ -185,12 +182,10 @@ export default function IndexPage() {
           ></iframe>
         </div>
       </Section>
-
-      </Section>
       {/* CARDS SECTION */}
       <Section title="Why attend" className="bg-gray-100">
         <Card className="md:w-1/3">
-          <DesignIcon className="w-full h-full max-h-64 px-16 md:px-8 pb-8 pt-4" />
+          <DesignIcon className="w-full h-full px-16 pt-4 pb-8 max-h-64 md:px-8" />
           <ul className="list-disc list-inside">
             <li key="9" className="pb-2">
               Practice UI inventory{" "}
@@ -204,7 +199,7 @@ export default function IndexPage() {
           </ul>
         </Card>
         <Card className="md:w-1/3">
-          <DevIcon className="w-full h-full max-h-64 px-8 pb-8 pt-4" />
+          <DevIcon className="w-full h-full px-8 pt-4 pb-8 max-h-64" />
           <ul className="list-disc list-inside">
             <li key="12" className="pb-2">
               Component-driven development
@@ -218,7 +213,7 @@ export default function IndexPage() {
           </ul>
         </Card>
         <Card className="md:w-1/3">
-          <ProcessIcon className="w-full h-full max-h-64 px-8 pb-8 pt-4" />
+          <ProcessIcon className="w-full h-full px-8 pt-4 pb-8 max-h-64" />
           <ul className="list-disc list-inside">
             <li key="15" className="pb-2">
               Automate design and development processes
@@ -235,13 +230,13 @@ export default function IndexPage() {
 
       <Section title="Who we are">
         <BlockImage image={<Avatar src="/varya.jpg" alt="Varya Stepanova" />}>
-          <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+          <h3 className="mb-3 text-3xl font-bold leading-none text-gray-800">
             Varya Stepanova
           </h3>
-          <p className="uppercase w-full font-bold text-lg leading-loose text-gray-900">
+          <p className="w-full text-lg font-bold leading-loose text-gray-900 uppercase">
             Design systems architect and engineering manager
           </p>
-          <p className="text-gray-600 text-xl mb-8">
+          <p className="mb-8 text-xl text-gray-600">
             As an independent consultant, Varya helps companies to launch and
             boost their design systems. Her major focus is bridging the gap for
             designers, developers, and business specialists. That all is
@@ -251,7 +246,7 @@ export default function IndexPage() {
           <div className="flex">
             <a
               key="l-v"
-              className="mr-4 cursor-pointer flex"
+              className="flex mr-4 cursor-pointer"
               href="https://www.linkedin.com/in/varyastepanova/"
             >
               <LinkedinIcon
@@ -273,25 +268,23 @@ export default function IndexPage() {
           reverse
           image={<Avatar src="/sherif.jpg" alt="Sherif Saleh" />}
         >
-          <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+          <h3 className="mb-3 text-3xl font-bold leading-none text-gray-800">
             Sherif Saleh
           </h3>
-          <p className="uppercase w-full font-bold text-lg leading-loose text-gray-900">
+          <p className="w-full text-lg font-bold leading-loose text-gray-900 uppercase">
             Senior product designer
           </p>
 
-          <p className="text-gray-600 text-xl mb-8">
-            Sherif is a senior product designer. He crafts deligthful experiences
-            through data analytics, user research, prototypes, and validation.
-            Sherif has extensive experience with design systems and years of
-            working for financial services, banks, and automotive.
-
-
+          <p className="mb-8 text-xl text-gray-600">
+            Sherif is a senior product designer. He crafts deligthful
+            experiences through data analytics, user research, prototypes, and
+            validation. Sherif has extensive experience with design systems and
+            years of working for financial services, banks, and automotive.
           </p>
           <div className="flex">
             <a
               key="l-n"
-              className="mr-4 cursor-pointer flex"
+              className="flex mr-4 cursor-pointer"
               href="https://www.linkedin.com/in/salehsherif/"
             >
               <LinkedinIcon
@@ -309,17 +302,15 @@ export default function IndexPage() {
             </a>
           </div>
         </BlockImage>
-        <BlockImage
-          image={<Avatar src="/nikita.jpg" alt="Nikita Sharbakov" />}
-        >
-          <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">
+        <BlockImage image={<Avatar src="/nikita.jpg" alt="Nikita Sharbakov" />}>
+          <h3 className="mb-3 text-3xl font-bold leading-none text-gray-800">
             Nikita Sherbakov
           </h3>
-          <p className="uppercase w-full font-bold text-lg leading-loose text-gray-900">
+          <p className="w-full text-lg font-bold leading-loose text-gray-900 uppercase">
             Software architect & senior frontend engineer
           </p>
 
-          <p className="text-gray-600 text-xl mb-8">
+          <p className="mb-8 text-xl text-gray-600">
             Nikita has 10+ years of experience building web projects of
             different kinds, starting from small websites to Design Systems and
             complex web services. He can help with creating and maintaining
@@ -329,7 +320,7 @@ export default function IndexPage() {
           <div className="flex">
             <a
               key="l-n"
-              className="mr-4 cursor-pointer flex"
+              className="flex mr-4 cursor-pointer"
               href="https://linkedin.com/in/nikita-sherbakov"
             >
               <LinkedinIcon
@@ -401,9 +392,9 @@ export default function IndexPage() {
         titleDecoration={false}
         className="border-transparent"
       >
-        <div className="relative bg-design-systems bg-center flex w-full py-8">
-          <div className="absolute top-0 right-0 bottom-0 left-0 bg-gray-200 opacity-75" />
-          <div className="container flex flex-wrap max-w-5xl mx-auto z-10 justify-between">
+        <div className="relative flex w-full py-8 bg-center bg-design-systems">
+          <div className="absolute top-0 bottom-0 left-0 right-0 bg-gray-200 opacity-75" />
+          <div className="container z-10 flex flex-wrap justify-between max-w-5xl mx-auto">
             {[
               Microsoft,
               Spotify,
@@ -415,10 +406,10 @@ export default function IndexPage() {
               IBM,
             ].map((Logo, i) => {
               return (
-                <div className="md:w-1/4 w-1/2 h-24 flex" key={i + "_logo"}>
+                <div className="flex w-1/2 h-24 md:w-1/4" key={i + "_logo"}>
                   {
                     <Logo
-                      className="max-h-24 w-full px-8"
+                      className="w-full px-8 max-h-24"
                       preserveAspectRatio="xMidYMid"
                     />
                   }
@@ -430,8 +421,8 @@ export default function IndexPage() {
       </Section>
 
       <Section title="Custom workshop version" className="border-b-0">
-        <div className=" text-gray-600 text-justify tracking-wider my-8  px-4">
-          <p className=" text-xl leading-8 my-4">
+        <div className="px-4 my-8 tracking-wider text-justify text-gray-600 ">
+          <p className="my-4 text-xl leading-8 ">
             Need a custom version? We can tailor this workshop for your company.
             When focused on your product and taking into account your team
             shape, the workshop outcome is not only a training session but also
@@ -441,7 +432,7 @@ export default function IndexPage() {
             discuss questions they might have about implementing a design
             system.
           </p>
-          <p className="text-xl leading-8 my-4">
+          <p className="my-4 text-xl leading-8">
             Contact Varya by&nbsp;
             <a className="text-v-dark-blue" href="mailto:mail@varya.me">
               mail@varya.me
@@ -451,22 +442,23 @@ export default function IndexPage() {
         </div>
       </Section>
       <SectionShape className="transform rotate-180" />
-      <section className="container mx-auto text-center py-6 mb-12">
+      <section className="container py-6 mx-auto mb-12 text-center">
         <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">
           Tickets
         </h2>
         <div className="w-full mb-4">
-          <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
+          <div className="w-1/6 h-1 py-0 mx-auto my-0 bg-white rounded-t opacity-25"></div>
         </div>
         <p className="my-4 text-3xl leading-tight">
-          10 early-bird tickets (before the 22nd of March) for €310 (incl. VAT 24%)
+          10 early-bird tickets (before the 22nd of March) for €310 (incl. VAT
+          24%)
         </p>
         <p className="my-4 text-3xl leading-tight">
           10 regular price tickets for €434 (incl. VAT 24%)
         </p>
         <Button
           name="bottom-register"
-          className="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          className="px-8 py-4 mx-auto my-6 font-bold text-gray-800 transition duration-300 ease-in-out transform bg-white rounded-full shadow-lg lg:mx-0 hover:underline focus:outline-none focus:shadow-outline hover:scale-105"
           onClick={() =>
             (location.href =
               "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
