@@ -38,6 +38,7 @@ module.exports = {
 
       addUtilities(utilities, variants("borderColor"));
     },
+    require("@tailwindcss/aspect-ratio"),
   ],
   variants: {
     extend: {

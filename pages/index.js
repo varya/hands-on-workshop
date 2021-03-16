@@ -173,18 +173,19 @@ export default function IndexPage() {
             components and exported to code.
           </p>
         </div>
-        <div
-          className=""
-          >
+        <div className="w-full mx-4 aspect-w-16 aspect-h-9">
           <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/RWECCt6rDPU"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
             className="item-center"
           ></iframe>
         </div>
+      </Section>
+
       </Section>
       {/* CARDS SECTION */}
       <Section title="Why attend" className="bg-gray-100">
