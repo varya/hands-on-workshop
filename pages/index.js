@@ -153,14 +153,38 @@ export default function IndexPage() {
               format="%start%:00"
               />)} heading="End of the workshop" align="end" />
         </Timeline>
-        <div className=" text-gray-600 text-justify tracking-wider my-8 px-4">
-          <p className=" text-xl leading-8 my-4 px-40">
+
+      </Section>
+       {/* RESULT SECTION */}
+      <Section title="Deliverables" className="bg-gray-100">
+        <div className="text-gray-600 text-justify tracking-wider my-8 px-4">
+          <p className="text-xl leading-8 my-4">
             By the end of the workshop, each team has a ready-to-use component
             library, an end product built out of that, and a tuned process to
             ensure smooth updates.
           </p>
         </div>
-
+      </Section>
+      {/* VIDEO SECTION */}
+      <Section title="Sneak peek">
+        <div className="text-gray-600 text-justify tracking-wider my-8 px-4">
+          <p className="text-xl leading-8 my-4">
+            Changes in Figma design tokens are automatically reflected in the
+            components and exported to code.
+          </p>
+        </div>
+        <div
+          className=""
+          >
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/RWECCt6rDPU"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            className="item-center"
+          ></iframe>
+        </div>
       </Section>
       {/* CARDS SECTION */}
       <Section title="Why attend" className="bg-gray-100">
