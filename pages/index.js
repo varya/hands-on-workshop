@@ -57,7 +57,7 @@ export default function IndexPage() {
                 "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
             }
           >
-            Register for €310 (incl. VAT)
+            Register for €434 (incl. VAT)
           </Button>
         </div>
       </Hero>
