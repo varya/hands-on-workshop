@@ -450,11 +450,10 @@ export default function IndexPage() {
           <div className="w-1/6 h-1 py-0 mx-auto my-0 bg-white rounded-t opacity-25"></div>
         </div>
         <p className="my-4 text-3xl leading-tight">
-          10 early-bird tickets (before the 22nd of March) for €310 (incl. VAT
-          24%)
+          10 early-bird tickets: SOLD OUT
         </p>
         <p className="my-4 text-3xl leading-tight">
-          10 regular price tickets for €434 (incl. VAT 24%)
+          Regular price tickets for €434 (incl. VAT 24%)
         </p>
         <Button
           name="bottom-register"
