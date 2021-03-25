@@ -1,7 +1,7 @@
 {
-  "name": "next-starter-tailwind",
-  "version": "2.0.0",
-  "description": "Next.js starter styled with Tailwind CSS",
+  "name": "hands-on-landing",
+  "version": "1.0.0",
+  "description": "Landing page for hands-on wirth design systems workshop",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -11,14 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/taylorbryant/next-starter-tailwind.git"
+    "url": "git+https://github.com/varya/hands-on-workshop.git"
   },
-  "author": "Taylor Bryant",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/taylorbryant/next-starter-tailwind/issues"
-  },
-  "homepage": "https://github.com/taylorbryant/next-starter-tailwind#readme",
   "dependencies": {
     "babel-plugin-inline-react-svg": "^1.1.2",
     "clsx": "^1.1.1",
