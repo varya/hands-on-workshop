@@ -29,24 +29,23 @@ export default function IndexPage() {
   return (
     <>
       <Hero>
-        {/* <!--Left Col--> */}
-        <div className="flex flex-col items-center justify-center flex-grow w-full mt-12 text-center md:w-8/12 md:text-left">
+        <div className="flex flex-col items-center justify-center w-full mt-12 text-center md:text-left">
           <h1 className="my-4 text-5xl font-bold leading-tight">
             Hands-on with Design Systems
           </h1>
-          <p className="mb-8 text-2xl leading-normal">
+          <p className="mb-8 text-2xl leading-normal text-center">
             2-day workshop on building a design system with Figma and React.
             Join as a designer or as a developer to work as a team.
           </p>
         </div>
-        {/* <!--Right Col--> */}
-        <div className="flex flex-col items-center justify-center flex-grow w-full text-center md:w-4/12 md:text-left">
+
+        {/* <!--Left Col--> */}
+        <div className="flex flex-col items-center justify-center w-full mt-12 text-center md:w-6/12 md:text-left">
           <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
             8 & 9 April
           </p>
           <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
             <LocalTime start={11} end={15} format="%start%-%end% %timezone%" />
-            {/* Details coming soon, stay tuned! */}
           </p>
           <Button
             variant="base"
@@ -57,8 +56,36 @@ export default function IndexPage() {
                 "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
             }
           >
-            Register for €434 (incl. VAT)
+            Register
           </Button>
+          <p className="m-6 mx-6 text-sm text-bold">
+            <strong>Available tickets:</strong> 2 for designers, 6 for
+            developers
+          </p>
+        </div>
+        {/* <!--Right Col--> */}
+        <div className="flex flex-col items-center justify-center w-full mt-12 text-center md:w-6/12 md:text-left">
+          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+            5 & 6 May
+          </p>
+          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+            <LocalTime start={11} end={15} format="%start%-%end% %timezone%" />
+          </p>
+          <Button
+            variant="base"
+            className="mt-12 mb-0"
+            name="hero register"
+            onClick={() =>
+              (location.href =
+                "https://www.eventbrite.com/e/hands-on-with-design-systems-may-tickets-148020289671")
+            }
+          >
+            Register
+          </Button>
+          <p className="m-6 mx-6 text-sm text-bold">
+            <strong>Available tickets:</strong> 12 for designers, 12 for
+            developers
+          </p>
         </div>
       </Hero>
       <SectionShape className="-mt-12 lg:-mt-24" />
@@ -449,22 +476,63 @@ export default function IndexPage() {
         <div className="w-full mb-4">
           <div className="w-1/6 h-1 py-0 mx-auto my-0 bg-white rounded-t opacity-25"></div>
         </div>
-        <p className="my-4 text-3xl leading-tight">
-          Early-bird tickets: SOLD OUT
-        </p>
-        <p className="my-4 text-3xl leading-tight">
-          Regular price tickets for €434 (incl. VAT 24%)
-        </p>
-        <Button
-          name="bottom-register"
-          className="px-8 py-4 mx-auto my-6 font-bold text-gray-800 transition duration-300 ease-in-out transform bg-white rounded-full shadow-lg lg:mx-0 hover:underline focus:outline-none focus:shadow-outline hover:scale-105"
-          onClick={() =>
-            (location.href =
-              "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
-          }
-        >
-          Register to the workshop
-        </Button>
+        <div className="container flex flex-col flex-wrap max-w-5xl px-3 py-16 mx-auto md:flex-row">
+          {/* LEFT COL */}
+          <div className="flex flex-col w-full pr-6 mt-12 text-center md:w-6/12">
+            <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+              8 & 9 April
+            </p>
+            <p className="my-4 text-3xl leading-tight">
+              Early-bird tickets: SOLD OUT
+            </p>
+            <p className="my-4 text-3xl leading-tight">
+              Regular price tickets: €350{" "}
+              <span className="opacity-60">(+{"\u00A0"}€84.00 VAT)</span>
+            </p>
+            <Button
+              name="bottom-register"
+              className="px-8 py-4 mx-auto my-6 mt-auto font-bold text-gray-800 transition duration-300 ease-in-out transform bg-white rounded-full shadow-lg lg:mx-0 hover:underline focus:outline-none focus:shadow-outline hover:scale-105"
+              onClick={() =>
+                (location.href =
+                  "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
+              }
+            >
+              Register to the workshop
+            </Button>
+          </div>
+          {/* RIGHT COL */}
+          <div className="flex flex-col w-full pl-6 mt-12 justify- md:w-6/12">
+            <p className="w-full text-xl font-bold uppercase tracking-loose">
+              5 & 6 May
+            </p>
+            <p className="my-4 text-2xl leading-tight">
+              Early-bird tickets: €300.00{" "}
+              <span className="opacity-60">(+{"\u00A0"}€72.00 VAT)</span>
+            </p>
+            <p className="my-4 text-2xl leading-tight">
+              Early-bird ticket combo (1 designer + 1 developer): €250.00{" "}
+              <span className="opacity-60">
+                (+{"\u00A0"}€60.00 VAT) per ticket
+              </span>
+            </p>
+
+            <p className="my-4 text-2xl leading-tight">
+              Regular tickets: €450.00{" "}
+              <span className="opacity-60">(+{"\u00A0"}€108.00 VAT)</span>
+            </p>
+
+            <Button
+              name="bottom-register"
+              className="px-8 py-4 mx-auto my-6 mt-auto font-bold text-gray-800 transition duration-300 ease-in-out transform bg-white rounded-full shadow-lg lg:mx-0 hover:underline focus:outline-none focus:shadow-outline hover:scale-105"
+              onClick={() =>
+                (location.href =
+                  "https://www.eventbrite.com/e/hands-on-with-design-systems-may-tickets-148020289671")
+              }
+            >
+              Register to the workshop
+            </Button>
+          </div>
+        </div>
       </section>
     </>
   );

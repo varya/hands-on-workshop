@@ -3,14 +3,14 @@ export default function Nav() {
   return (
     <nav
       id="header"
-      className="fixed w-full z-30 top-0 bg-white border-bshadow"
+      className="fixed top-0 z-30 w-full bg-white border-bshadow"
     >
-      <div className="w-full container max-w-5xl mx-auto px-3 flex flex-wrap items-center justify-between mt-0 py-2">
+      <div className="container flex flex-wrap items-center justify-between w-full max-w-5xl px-3 py-2 mx-auto mt-0">
         <div>
-          <span className="text-v-red text-sm sm:text-base">
+          <span className="text-sm text-v-red sm:text-base">
             HANDS-ON WITH DESIGN SYSTEMS{" "}
           </span>
-          <span className="text-v-yellow hidden sm:inline">WORKSHOP</span>
+          <span className="hidden text-v-yellow sm:inline">WORKSHOP</span>
         </div>
         <Button
           name="header-register"
@@ -18,7 +18,7 @@ export default function Nav() {
           className="my-0 text-sm"
           onClick={() =>
             (location.href =
-              "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
+              "https://www.eventbrite.com/e/hands-on-with-design-systems-may-tickets-148020289671")
           }
         >
           Register
