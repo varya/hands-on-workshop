@@ -1,0 +1,79 @@
+title: Setting up the project repository
+---
+
+# Setting up the project
+
+## Prerequisites
+
+Begfore you start, make sure you have the following installed on your machine:
+
+- Node.js 12+
+- Yarn
+- Docker (optional, if you want to run the tests)
+
+## Cloning the repository
+
+First of all you need to grab a template, which we prepared for you - navigate to [Project template](https://github.com/bridge-design/hands-on-workshop) and press green button "Use this template". Now you have your own copy of working repository.
+
+Then install dependencies: 
+
+```
+yarn install
+```
+
+## Building Figma tokens
+
+3. Before you start working with components and product pages, you need to prepare the tokens,exported from Figma. 
+Simply run: 
+
+```
+yarn build:tokens
+```
+
+You have to run this command every time you reexport design tokens from Figma.
+Refer to <a href="https://github.com/bridge-design/hands-on-workshop#tokens">README</a> section for more details on how tokens are built.
+
+## Working with component library.
+
+To start your library in development mode, run:
+
+```
+yarn start
+```
+
+
+
+This command will start storybook server at [http://localhost:6006/](http://localhost:6006)
+The storybook already contain some basic pages - Typography and color palette, as well as 2 components - icon and Button.
+
+## Running tests
+
+To run tests, make sure that storybook server has started, as described above. Then execute the commands in separate terminal window:
+
+```
+yarn test
+```
+
+## Building library
+
+When you feel your library is ready for production, build it:
+
+```
+yarn build:design-system
+```
+
+This will create a minified production build of the library in /dist folder. This library is being imported into product workspace.
+
+## Developing a product
+
+Run the following command to start product development server:
+
+```
+yarn product
+```
+
+To create production build, run:
+
+```
+yarn build
+```
