@@ -12,12 +12,33 @@ import LegoIcon from "../../public/blocks.svg";
 import FeedbackIcon from "../../public/chat-box.svg";
 
 const blocks = [
-  { title: "Making a toast", image: ToastIcon, slug: "./toast" },
-  { title: "Naming", image: ComponentsIcon, slug: "./naming" },
-  { title: "UI Inventory", image: BoxIcon, slug: "./inventory" },
-  { title: "Parts of design system", image: LegoIcon, slug: "./parts" },
-  { title: "Pattern Journey", image: MapIcon, slug: "./journey" },
-  { title: "Feedback Form", image: FeedbackIcon, slug: "./feedback" },
+  {
+    title: "Making a toast",
+    image: ToastIcon,
+    slug: "./toast",
+    roles: ["designer", "developer"],
+  },
+  {
+    title: "Setting up the project",
+    image: ComponentsIcon,
+    slug: "./setup",
+    roles: ["developer"],
+  },
+  // { title: "Naming", image: ComponentsIcon, slug: "./naming" },
+  { title: "UI Inventory", image: BoxIcon, slug: "./inventory", roles: [] },
+  {
+    title: "Parts of design system",
+    image: LegoIcon,
+    slug: "./parts",
+    roles: [],
+  },
+  { title: "Pattern Journey", image: MapIcon, slug: "./journey", roles: [] },
+  {
+    title: "Feedback Form",
+    image: FeedbackIcon,
+    slug: "./feedback",
+    roles: [],
+  },
 ];
 
 export default function HandoutPage() {
@@ -44,8 +65,9 @@ export default function HandoutPage() {
                     </a>
                   </div>
                 </Link>
-                <Ribbon role="developer" />
-                <Ribbon role="designer" />
+                {block.roles.map((r) => (
+                  <Ribbon role={r} />
+                ))}
               </Card>
             );
           })}
