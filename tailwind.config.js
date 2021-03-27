@@ -39,6 +39,7 @@ module.exports = {
       addUtilities(utilities, variants("borderColor"));
     },
     require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/typography"),
   ],
   variants: {
     extend: {
