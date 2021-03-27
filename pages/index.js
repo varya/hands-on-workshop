@@ -152,7 +152,8 @@ export default function IndexPage() {
             <ul className="list-disc list-inside">
               <li key="7">Patterns and components in Figma</li>
               <li key="8">Coding the library of components</li>
-              <li key="9">Building the product using DS</li>
+              <li key="9">Library release cycle</li>
+              <li key="10">Building the product using the design system</li>
             </ul>
           </TimelineItem>
           <TimelineItem
@@ -160,8 +161,9 @@ export default function IndexPage() {
             heading="Design system in action"
           >
             <ul className="list-disc list-inside">
-              <li key="10">Brand changes to the library</li>
-              <li key="11">Automatic product update</li>
+              <li key="11">Brand changes to the components</li>
+              <li key="12">Updating and releasing the component library</li>
+              <li key="13">Automatic product update</li>
             </ul>
           </TimelineItem>
           <TimelineItem
