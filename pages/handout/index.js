@@ -11,17 +11,18 @@ import MapIcon from "../../public/map.svg";
 import LegoIcon from "../../public/blocks.svg";
 import FeedbackIcon from "../../public/chat-box.svg";
 
+const pathPrefix = "/handout";
 const blocks = [
   {
     title: "Making a toast",
     image: ToastIcon,
-    slug: "./toast",
+    slug: "toast",
     roles: ["designer", "developer"],
   },
   {
     title: "Setting up the project",
     image: ComponentsIcon,
-    slug: "./setup",
+    slug: "setup",
     roles: ["developer"],
   },
   // { title: "Naming", image: ComponentsIcon, slug: "./naming" },
@@ -29,14 +30,14 @@ const blocks = [
   {
     title: "Parts of design system",
     image: LegoIcon,
-    slug: "./parts",
+    slug: "parts",
     roles: [],
   },
   { title: "Pattern Journey", image: MapIcon, slug: "./journey", roles: [] },
   {
     title: "Feedback Form",
     image: FeedbackIcon,
-    slug: "./feedback",
+    slug: "feedback",
     roles: [],
   },
 ];
@@ -58,15 +59,15 @@ export default function HandoutPage() {
                 <div className="w-full h-full px-16 pt-4 pb-8 md:px-8">
                   {<block.image className="w-full h-full p-2" />}
                 </div>
-                <Link href={block.slug}>
-                  <div className="absolute top-0 left-0 w-full h-full cursor-pointer ">
-                    <a className="flex items-center justify-center w-full h-full text-lg text-center text-white uppercase transition duration-300 bg-gray-700 opacity-90 group-hover:bg-transparent text-bold group-hover:transform group-hover:-translate-y-1/1 group-hover:text-transparent">
+                <Link href={`${pathPrefix}/${block.slug}`}>
+                  <a className="absolute top-0 left-0 w-full h-full cursor-pointer ">
+                    <div className="flex items-center justify-center w-full h-full text-lg text-center text-white uppercase transition duration-300 bg-gray-700 opacity-90 group-hover:bg-transparent text-bold group-hover:transform group-hover:-translate-y-1/1 group-hover:text-transparent">
                       <div>{block.title}</div>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
                 </Link>
                 {block.roles.map((r) => (
-                  <Ribbon role={r} />
+                  <Ribbon key={r} role={r} />
                 ))}
               </Card>
             );
