@@ -5,7 +5,7 @@ module.exports = {
   purge: {
     content: ["./components/**/*.js", "./pages/**/*.js"],
     options: {
-      safelist: ["bg-v-dark-blue"],
+      safelist: ["bg-v-dark-blue", "prose"],
     },
   },
   theme: {
