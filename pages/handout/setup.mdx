@@ -14,7 +14,7 @@ Before you start, make sure you have the following are installed on your machine
 
 ## Getting your own copy of the repository.
 
-First of all you need to grab a template, which we prepared for you - navigate to [Project template](https://github.com/bridge-design/hands-on-workshop) and press green button "Use this template". Now you have your own copy of working repository.
+First of all you need to grab a template, which we prepared for you - navigate to [Project template](https://github.com/bridge-design/hands-on-workshop) and press green button "Use this template". Go on with setting up a local copy on your machine. Now you have your own copy of working repository.
 
 Then install dependencies: 
 
@@ -22,30 +22,41 @@ Then install dependencies:
 yarn install
 ```
 
+## Project structure overview.
+
+The working repository consists of three [Yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/), which can be used independently. Here is the visual representation:
+
+
+<iframe style={{border:"none"}} width="800" height="600" src="https://whimsical.com/embed/3yrVVcmAHdMQ3jiTFCrL6g@2Ux7TurymMsZBSgTNJXZ"></iframe>
+
+
+
+For the deeper information about structure of each workspace please refer to README, located at the root of repository.
+
+
 ## Building Figma tokens
 
-3. Before you start working with components and product pages, you need to prepare the tokens,exported from Figma. 
-Simply run: 
+First step is to build Figma tokens, which you will use in components and product pages. the tokens are exported from Figma in one click with [Design Tokens plugin](https://github.com/lukasoppermann/design-tokens), but the default export file is not very convenient for development. The purpose of _Tokens workspace_ is simply to transform exported JSON into JS object of a convenient shape.
+
+Build tokens once at the beginning, and every time you reexport it from Figma: 
 
 ```
 yarn build:tokens
 ```
 
-You have to run this command every time you reexport design tokens from Figma.
-Refer to <a href="https://github.com/bridge-design/hands-on-workshop#tokens">README</a> section for more details on how tokens are built.
 
 ## Working with component library.
 
 To start your library in development mode, run:
 
 ```
-yarn start
+yarn design-system
 ```
 
-
+You also can use `yarn start` alias.
 
 This command will start storybook server at [http://localhost:6006/](http://localhost:6006)
-The storybook already contain some basic pages - Typography and color palette, as well as 2 components - icon and Button.
+The storybook already contains some basic pages - Typography and Color Palette, as well as two components - icon and Button.
 
 ## Running tests
 
@@ -55,15 +66,6 @@ To run tests, make sure that storybook server has started, as described above. T
 yarn test
 ```
 
-## Building library
-
-When you feel your library is ready for production, build it:
-
-```
-yarn build:design-system
-```
-
-This will create a minified production build of the library in /dist folder. This library is being imported into product workspace.
 
 ## Developing a product
 

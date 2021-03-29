@@ -1,0 +1,33 @@
+import Layout from "../../templates/layout"
+
+export default Layout
+export const meta = { title: "Build and deployment" }
+
+
+
+## Building and releasing library
+
+When you feel your library is ready for production, you can build it:
+
+```
+yarn build:design-system
+```
+
+A minified production build of the library will be created in /dist folder. Now you need to bump the version of your library:
+
+```
+yarn build:design-system
+```
+
+...and type the new version number.
+
+Now go to package.json of your product (product/package.json) and manually change the version of the library:
+
+```diff
+  "dependencies": {
+-   "design-system": "0.1.0", 
++   "design-system": "0.2.0",
+  ...
+  }
+
+```
