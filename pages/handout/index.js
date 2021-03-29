@@ -10,6 +10,7 @@ import BoxIcon from "../../public/package.svg";
 import MapIcon from "../../public/map.svg";
 import LegoIcon from "../../public/blocks.svg";
 import FeedbackIcon from "../../public/chat-box.svg";
+import DeploymentIcon from "../../public/deployment.svg";
 
 const blocks = [
   {
@@ -33,6 +34,12 @@ const blocks = [
     roles: [],
   },
   { title: "Pattern Journey", image: MapIcon, slug: "./journey", roles: [] },
+  {
+    title: "Build and Deployment",
+    image: DeploymentIcon,
+    slug: "build",
+    roles: ["developer"],
+  },
   {
     title: "Feedback Form",
     image: FeedbackIcon,

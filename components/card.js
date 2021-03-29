@@ -8,22 +8,20 @@ export default function Card({
   className,
 }) {
   return (
-    <div
-      className={clsx(className, "w-full flex flex-col flex-grow flex-shrink")}
-    >
-      <div className="flex-1 rounded-t rounded-b-none overflow-hidden m-3 mb-0 p-6 bg-white shadow-lg relative">
+    <div className={clsx(className, "w-full flex flex-col flex-shrink")}>
+      <div className="relative flex-1 p-6 m-3 mb-0 overflow-hidden bg-white rounded-t rounded-b-none shadow-lg">
         {preheader && (
-          <p className="w-full text-gray-600 text-xs md:text-sm px-6">
+          <p className="w-full px-6 text-xs text-gray-600 md:text-sm">
             {preheader.toUpperCase()}
           </p>
         )}
-        <div className="w-full font-bold text-xl text-gray-800 px-6">
+        <div className="w-full px-6 text-xl font-bold text-gray-800">
           {title}
         </div>
-        <div className="text-gray-800 text-base px-6">{children}</div>
+        <div className="px-6 text-base text-gray-800">{children}</div>
       </div>
       {button && (
-        <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow-lg m-3 p-6">
+        <div className="flex-none p-6 m-3 mt-auto overflow-hidden bg-white rounded-t-none rounded-b shadow-lg">
           <div className="flex items-center justify-center">
             <Button variant="gradient">{button}</Button>
           </div>
@@ -32,3 +30,5 @@ export default function Card({
     </div>
   );
 }
+
+
