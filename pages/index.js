@@ -10,6 +10,7 @@ import Button from "@components/button";
 import Timeline, { TimelineItem } from "@components/timeline";
 import Testimonial from "@components/testimonials";
 import LocalTime from "@components/local-time";
+import Header from "@components/header";
 
 import DesignIcon from "../public/sketch.svg";
 import DevIcon from "../public/web-development.svg";
@@ -28,6 +29,7 @@ import Yandex from "../public/logo/yandex.svg";
 export default function IndexPage() {
   return (
     <>
+      <Header />
       <Hero>
         <div className="flex flex-col items-center justify-center w-full mt-12 text-center md:text-left">
           <h1 className="my-4 text-5xl font-bold leading-tight">
@@ -59,8 +61,7 @@ export default function IndexPage() {
             Register
           </Button>
           <p className="m-6 mx-6 text-sm text-bold">
-            <strong>Available tickets:</strong> 4 for
-            developers
+            <strong>Available tickets:</strong> 4 for developers
           </p>
         </div>
         {/* <!--Right Col--> */}

@@ -2,7 +2,12 @@ var flattenColorPalette = require("tailwindcss/lib/util/flattenColorPalette")
   .default;
 
 module.exports = {
-  purge: ["./components/**/*.js", "./pages/**/*.js"],
+  purge: {
+    content: ["./components/**/*.js", "./pages/**/*.js"],
+    options: {
+      safelist: ["bg-v-dark-blue", "prose"],
+    },
+  },
   theme: {
     extend: {
       colors: {
