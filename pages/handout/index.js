@@ -11,6 +11,7 @@ import MapIcon from "../../public/map.svg";
 import LegoIcon from "../../public/blocks.svg";
 import FeedbackIcon from "../../public/chat-box.svg";
 import DeploymentIcon from "../../public/deployment.svg";
+import TestingIcon from "../../public/testing.svg";
 
 const pathPrefix = "/handout";
 const blocks = [
@@ -32,13 +33,19 @@ const blocks = [
     title: "Parts of design system",
     image: LegoIcon,
     slug: "parts",
-    roles: [],
+    roles: ["designer", "developer"],
   },
   { title: "Pattern Journey", image: MapIcon, slug: "./journey", roles: [] },
   {
+    title: "Visual regression testing",
+    image: TestingIcon,
+    slug: "test",
+    roles: ["developer"],
+  },
+  {
     title: "Build and Deployment",
     image: DeploymentIcon,
-    slug: "build",
+    slug: "release",
     roles: ["developer"],
   },
   {

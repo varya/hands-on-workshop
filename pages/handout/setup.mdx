@@ -1,20 +1,19 @@
 import Layout from "../../templates/layout"
 
 export default Layout
-export const meta = { title: "Setting up the project" }
+export const meta = { title: "Setting up the Project" }
 
 
 ## Prerequisites
 
-Before you start, make sure you have the following are installed on your machine:
+Before you start, make sure you have the following apps installed on your machine:
 
 - Node.js 12+
 - Yarn
-- Docker (optional, if you want to run the tests)
 
 ## Getting your own copy of the repository.
 
-First of all you need to grab a template, which we prepared for you - navigate to [Project template](https://github.com/bridge-design/hands-on-workshop) and press green button "Use this template". Go on with setting up a local copy on your machine. Now you have your own copy of working repository.
+First of all you need to grab a template, which we prepared for you - navigate to [Project repo](https://github.com/bridge-design/hands-on-workshop) and press the green button "Use this template". Make sure you choose a publc reposiitory type. Proceed with setting up a local copy on your machine. Now you have your own copy of working repository.
 
 Then install dependencies: 
 
@@ -22,7 +21,7 @@ Then install dependencies:
 yarn install
 ```
 
-## Project structure overview.
+## Project structure overview
 
 The working repository consists of three [Yarn workspaces](https://classic.yarnpkg.com/en/docs/workspaces/), which can be used independently. Here is the visual representation:
 
@@ -36,9 +35,9 @@ For the deeper information about structure of each workspace please refer to REA
 
 ## Building Figma tokens
 
-First step is to build Figma tokens, which you will use in components and product pages. the tokens are exported from Figma in one click with [Design Tokens plugin](https://github.com/lukasoppermann/design-tokens), but the default export file is not very convenient for development. The purpose of _Tokens workspace_ is simply to transform exported JSON into JS object of a convenient shape.
+First step is to build Figma tokens, which you will use in components and product pages. The tokens are exported from Figma in one click with [Design Tokens plugin](https://github.com/lukasoppermann/design-tokens), but the default export file is not very convenient for development. The purpose of _Tokens workspace_ is simply to transform exported JSON into JS object of a convenient shape.
 
-Build tokens once at the beginning, and every time you reexport it from Figma: 
+Build tokens once at the beginning, and every time you re-export it from Figma: 
 
 ```
 yarn build:tokens
@@ -53,23 +52,40 @@ To start your library in development mode, run:
 yarn design-system
 ```
 
-You also can use `yarn start` alias.
+You also can use alias:
+
+```
+yarn start
+```
 
 This command will start storybook server at [http://localhost:6006/](http://localhost:6006)
 The storybook already contains some basic pages - Typography and Color Palette, as well as two components - icon and Button.
 
-## Running tests
+## Adding new component
 
-To run tests, make sure that storybook server has started, as described above. Then execute the commands in separate terminal window:
+Quickly add component template files:
 
 ```
-yarn test
+yarn add-component <ComponentName>
 ```
+
+For example, if you run `yarn add-component Avatar`, a new folder with two new files will be created at `design-system/src/components`:
+
+- Avatar/
+  - index.js
+  - Avatar.stories.mdx
 
 
 ## Developing a product
 
-Run the following command to start product development server:
+Product workspace is based on [Create React App](https://github.com/facebook/create-react-app). Both tokens and design-sytems are imported as packages. Make sure they are built, otherwise you will get a dependency error.
+
+```
+yarn build:tokens
+yarn build:design-system
+```
+
+The following command will start product development server:
 
 ```
 yarn product
@@ -78,5 +94,5 @@ yarn product
 To create production build, run:
 
 ```
-yarn build
+yarn build:product
 ```
