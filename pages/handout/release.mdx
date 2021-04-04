@@ -5,7 +5,7 @@ export const meta = { title: "Build and Deployment" }
 
 
 
-## Building and releasing library
+## Building the library
 
 When you feel your library is ready for production, you can build it:
 
@@ -15,44 +15,72 @@ yarn build:design-system
 
 A minified production build of the library will be created in /dist folder. It is imported in your product's package.json folder.
 
+## Releasing the library
+
+1. First you need to bump the version of the library, you can use the following command:
+
 ```
-yarn build:design-system
+yarn version:design-system
 ```
 
-...and type the new version number.
+You will be prompted to type a version. Alternatively, you can run the command above with one of the flags: `--patch`, `--minor`, `--major`.
+
+1. Next, you will need to update the version of your library in product workspace. Edit your `product/package.json` accordingly:
+
+```
+  "dependencies": {
+-   "design-system": "0.1.0", 
++   "design-system": "0.2.0",
+  ...
+  }
+```
 
 
 
-## Building a product
-Before you start develping a product, you need to make sure that tokens and design-system are build locally, since they are imported as product dependencies. You can build product with the following:
+## Building the product
+Before you start building a product, you need to make sure that tokens and design-system are built locally, since they are being imported as product dependencies. 
+You can build product only with the following command:
 
+```
 yarn build:product
+```
+
 Or you can use a shortcut to build all 3 workspaces one by one:
 
 ```
 yarn build
 ```
 
+## Preparing for deployment
 
-## Deployment
-If you want to take advantage of github actions and continuosly deploy your product and storybook to github pages, you will need to set a few things:
+If you want to take advantage of Github Actions and continuosly deploy your product and storybook to github pages, you will need to set a few things:
 
-On free Github account only public repos can be deployed. Make sure your working repository is public, and the deployment branch is set to "gh-pages". It can be checked and fixed in repository settinds on Github.
+- Make sure your working repository is public, and the deployment branch is set to "gh-pages". It can be checked and fixed in repository settinds on Github.
 
-For product deployment, you need to edit "homepage" property in ./product/package.json. It should be pointing to your repository.
+- You need to edit "homepage" property in ./product/package.json. It should be pointing to your repository.
 
-Currently there are two deployment workflow, triggered on changes in product workspace and on library release respectively.
-
-## Releasing library
-
-You need to run:
-
-yarn release
-This command will trigger the following actions:
-
-npm version command will run in design-system workspace, you will be prompted to type new version number.
-New git tag will be created and committed, and changes will be pushed to your remote repository.
-On push to a remote a release workflow will be triggered: it will check if the version of library has changed, and if yes - deploy a product.
+```
+{
+  "homepage": "https://<USERNAME>.github.io/<REPOSITORY_NAME>",
+  ...
+}
+```
 
 
+## Releasing the product
 
+1. When you are ready to release the product, you need to run the following command to bump the version:
+
+```
+yarn version:product
+```
+
+2. As soon as you push your commits to main branch, a Github Action(`.github/workflows/release.yml`) will be triggered. It performs two tasks:
+- Checks the version of the product and compare it with previous one.
+- If version change is detected, build and deploy workflow is activated.
+
+Deploy won't run if the version is the same. If you still need to deploy the previous version for some reason, you can run it manually:
+
+```
+yarn deploy
+```
