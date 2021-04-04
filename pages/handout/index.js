@@ -79,7 +79,7 @@ const blocks = [
     title: "Feedback Form",
     image: FeedbackIcon,
     slug: "feedback",
-    url: "https://varyastepanova.typeform.com/to/uE8xtz4B",
+    url: "https://docs.google.com/forms/d/e/1FAIpQLSfdIs-UqbZNU5asS3z_YlREEqYmgfYGfL53McjiBAlcB6YfoA/viewform?usp=sf_link",
     roles: [],
   },
 ];
