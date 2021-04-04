@@ -1,0 +1,73 @@
+import Layout from "../../templates/layout"
+
+export default Layout
+export const meta = { title: "Build and Deployment" }
+
+
+
+## Updating design tokens
+
+If you want to sync with the design library, build Figma tokens.
+You will use in components and product pages.
+The tokens are exported from Figma in one click with
+[Design Tokens plugin](https://github.com/lukasoppermann/design-tokens), but the default
+export file is not very convenient for development
+ The purpose of _Tokens workspace_ is simply to transform exported JSON into
+ JS object of a convenient shape.
+
+Get the design tokens JSON
+file from your designer, put it as `tokens/design-tokens.json` into
+the repository. Then, build the tokens
+
+```
+yarn build:tokens
+```
+
+This command changes the files in `tokens/dist` directory. Normally, you would
+distribute them as an npm package for all to sync. But in the workshop, for
+the sake of simplicity, we are keeping it in the repository. In this case, you
+have to commit the changes for your other team member's to sync.
+
+
+
+## Adding new component
+
+Quickly add component template files:
+
+```
+yarn add-component <ComponentName>
+```
+
+For example, if you run `yarn add-component Avatar`, a new folder with two new files will be created at `design-system/src/components`:
+
+- Avatar/
+  - index.js
+  - Avatar.stories.mdx
+
+
+
+## Building and releasing library
+
+
+When you feel your library is ready to be used in the product, you can build it:
+
+```
+yarn build:design-system
+```
+
+A minified production build of the library will be created in `design-system/dist` folder.
+Normally, this folder would not be a part of your repository. You would keep it inside the
+library's npm package. But in the workshop, we keep it simple: you sync with your other
+team members by commiting the compiled files into the reposiitory.
+
+When the build is ready, you can release the library.
+
+```
+yarn version:design-system
+```
+
+...and type the new version number.
+
+Now you can use the noew library version in the product.
+
+
