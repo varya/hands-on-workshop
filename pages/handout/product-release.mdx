@@ -5,53 +5,15 @@ export const meta = { title: "Product release" }
 
 
 
-## Releasing the product
-
-## Building the library
-
-When you feel your library is ready for production, you can build it:
-
-```
-yarn build:design-system
-```
-
-A minified production build of the library will be created in /dist folder. It is imported in your product's package.json folder.
-
-## Releasing the library
-
-1. First you need to bump the version of the library, you can use the following command:
-
-```
-yarn version:design-system
-```
-
-You will be prompted to type a version. Alternatively, you can run the command above with one of the flags: `--patch`, `--minor`, `--major`.
-
-1. Next, you will need to update the version of your library in product workspace. Edit your `product/package.json` accordingly:
-
-```
-  "dependencies": {
--   "design-system": "0.1.0", 
-+   "design-system": "0.2.0",
-  ...
-  }
-```
-
-
-
 ## Building the product
-Before you start building a product, you need to make sure that tokens and design-system are built locally, since they are being imported as product dependencies. 
-You can build product only with the following command:
+
+Make sure your project is built before you release. You can build
+the product with the following command:
 
 ```
 yarn build:product
 ```
 
-Or you can use a shortcut to build all 3 workspaces one by one:
-
-```
-yarn build
-```
 
 ## Preparing for deployment
 
