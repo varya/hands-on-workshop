@@ -5,9 +5,21 @@ export const meta = { title: "Product update" }
 
 
 
+
+## Developing a final product
+
+Product workspace is based on [Create React App](https://github.com/facebook/create-react-app). Both tokens and design-sytems are imported as packages. Make sure they are built, otherwise you will get a dependency error.
+
+The following command will start product development server:
+
+```
+yarn product
+```
+
 ## Updating the product
 
-Go to package.json of your product (product/package.json) and manually change the version of the library:
+Go to package.json of your product (`product/package.json`) and change the
+version of the library:
 
 ```diff
   "dependencies": {
@@ -17,3 +29,6 @@ Go to package.json of your product (product/package.json) and manually change th
   }
 
 ```
+
+Change the product files to use new components and
+see them in action as you development server is running.
