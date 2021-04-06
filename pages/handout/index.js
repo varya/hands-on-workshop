@@ -34,9 +34,9 @@ const blocks = [
     roles: ["developer"],
   },
   {
-    title: "Library release",
+    title: "Coding the library",
     image: DeploymentIcon,
-    slug: "release",
+    slug: "coding-library",
     roles: ["developer"],
   },
   {
