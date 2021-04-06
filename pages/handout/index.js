@@ -7,11 +7,14 @@ import Link from "next/link";
 import ToastIcon from "../../public/toast.svg";
 import ComponentsIcon from "../../public/web-design.svg";
 import BoxIcon from "../../public/package.svg";
-import MapIcon from "../../public/map.svg";
+import CodingIcon from "../../public/coding.svg";
 import LegoIcon from "../../public/blocks.svg";
 import FeedbackIcon from "../../public/chat-box.svg";
 import DeploymentIcon from "../../public/deployment.svg";
 import TestingIcon from "../../public/testing.svg";
+import WebdesignIcon from "../../public/webdesign.svg";
+import SyncIcon from "../../public/sync.svg";
+import SetupIcon from "../../public/setup.svg";
 
 const pathPrefix = "/handout";
 const blocks = [
@@ -25,53 +28,53 @@ const blocks = [
     title: "UI Inventory",
     image: BoxIcon,
     slug: "./inventory",
-    roles: [],
+    roles: ["designer", "developer"],
   },
   {
     title: "Setting up the project",
-    image: ComponentsIcon,
+    image: SetupIcon,
     slug: "setup",
     roles: ["developer"],
   },
   {
     title: "Coding the library",
-    image: DeploymentIcon,
+    image: CodingIcon,
     slug: "coding-library",
     roles: ["developer"],
   },
   {
     title: "Product update",
-    image: DeploymentIcon, // TODO: change icon
+    image: ComponentsIcon,
     slug: "product-update",
     roles: ["developer"],
   },
   {
     title: "Re-design",
-    image: DeploymentIcon, // TODO: change icon
+    image: WebdesignIcon,
     slug: "re-design",
     roles: ["designer"],
   },
   {
     title: "Product release",
-    image: DeploymentIcon, // TODO: change icon
+    image: DeploymentIcon,
     slug: "product-release",
     roles: ["developer"],
   },
   {
     title: "Design changes",
-    image: LegoIcon, // TODO: change icon
+    image: LegoIcon,
     slug: "design-chages",
     roles: ["designer", "developer"],
   },
   {
     title: "Visual regression tests",
-    image: TestingIcon, // TODO: change icon
+    image: TestingIcon,
     slug: "visual-tests",
     roles: ["developer"],
   },
   {
     title: "Automatic syncronizations",
-    image: ComponentsIcon, // TODO: change icon
+    image: SyncIcon,
     slug: "autosync",
     roles: ["developer"],
   },
@@ -79,8 +82,9 @@ const blocks = [
     title: "Feedback Form",
     image: FeedbackIcon,
     slug: "feedback",
-    url: "https://docs.google.com/forms/d/e/1FAIpQLSfdIs-UqbZNU5asS3z_YlREEqYmgfYGfL53McjiBAlcB6YfoA/viewform?usp=sf_link",
-    roles: [],
+    url:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfdIs-UqbZNU5asS3z_YlREEqYmgfYGfL53McjiBAlcB6YfoA/viewform?usp=sf_link",
+    roles: ["designer", "developer"],
   },
 ];
 
@@ -89,7 +93,7 @@ export default function HandoutPage() {
     <>
       <Hero>
         <h2 className="text-2xl text-bold">
-          Welcome to Hands On with Design Systems workshop!
+          Welcome to Hands-on with Design Systems workshop!
         </h2>
       </Hero>
       {/* CARDS SECTION */}
