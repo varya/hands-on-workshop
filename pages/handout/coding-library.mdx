@@ -48,26 +48,63 @@ For example, if you run `yarn add-component Avatar`, a new folder with two new f
 
 ## Building and releasing library
 
+Do not forget that we serve design tokens and the library of components as different
+packages. However, it is good to keep them synced and always release the tokens when
+you are releasing the library.
 
-When you feel your library is ready to be used in the product, you can build it:
+### Release the tokens
 
 ```
-yarn build:design-system
+yarn tokens:version
 ```
 
-A minified production build of the library will be created in `design-system/dist` folder.
-Normally, this folder would not be a part of your repository. You would keep it inside the
-library's npm package. But in the workshop, we keep it simple: you sync with your other
-team members by commiting the compiled files into the reposiitory.
+The release script will build the tokens, increment the version and commit the
+result of the build. If you want to check beforehand that the build is not broken,
+run `build:tokens`.
 
-When the build is ready, you can release the library.
+### Upgrade the tokens version in the library
+
+Go to package.json of your design system (`design-system/package.json`) and change the
+version of the library:
+
+```diff
+  "dependencies": {
+-   "tokens": "0.1.0", 
++   "tokens": "0.2.0",
+  ...
+  }
+
+```
+
+### Release the library
+
+When the tokens are updated, all the changes are commited,
+you can release your library:
+
 
 ```
 yarn version:design-system
 ```
 
-You will be prompted to type a version. Alternatively, you can run the command above with one of the flags: `--patch`, `--minor`, `--major`.
+Similarly to the process with tokens, you will be prompted to type a version.
+Alongside with incrementing the version, this command builds the library and
+commits the result to the repository. If you want to check beforehand that the
+build goes normally, run `yarn build:design-system`.
 
-Now you can use the noew library version in the product.
+**Now you can use the noew library version in the product.**
 
+### Additional information
+
+When releasing the tokens or the library, you can run the command with one of
+the flags: `--patch`, `--minor`, `--major`. They will fill the coresponding
+version number accordingly.
+
+
+### Why we are keeping dist in the repo?
+
+When we are building the tokens or the library, their minified prduction-ready versions
+are  created in `tokens/dist` and `design-system/dist` folders.
+Normally, such folders would not be a part of your repository. You would keep them inside the
+npm packages. But in the workshop, we keep it simple: you sync with your other
+team members by commiting the compiled files into the reposiitory.
 
