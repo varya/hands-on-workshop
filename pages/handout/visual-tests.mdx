@@ -3,9 +3,16 @@ import Layout from "../../templates/layout"
 export default Layout
 export const meta = { title: "Visual Regression Testing" }
 
-You can optionally run visual regression tests for your components and storybook pages. We suggest to use [Loki](https://loki.js.org/) for this purpose.  It's already installed in _design-system_ workspace.
 
-To start the test first time, first make sure the storybook already running:
+You can optionally run visual regression tests for your components and storybook pages. We suggest to use either [Creevey](https://github.com/wKich/creevey) or [Loki](https://loki.js.org/) for this purpose.  Both already installed in _design-system_ workspace.
+
+
+## Creevey
+
+Running creevey requires Docker to be installed. Creevey provides a UI for previewing and managing component tests.
+
+
+First make sure the storybook already running, or if not, run it:
 
 ```
 yarn design-system
@@ -14,20 +21,44 @@ yarn design-system
 Then run in __separate__ terminal window:
 
 ```
-yarn test:update
+yarn test:creevey:runner
 ```
 
-Loki will run all tests and save references in `design-system/.loki/reference/`. Now you can proceed with changes, and run your tests:
+A UI will open.
+
+**TODO: will add more info here**
+
+
+Creevey is also configured to run as a workflow of Github actions. It will be triggered every time you push changes in `design-system/src` folder. You can view test results in Actions tab of yuor repo
+
+
+## Loki
+
+If you prefer more simple setup, you can use Loki. Loki prints test results to the console and stores refrence file in .loki folder at _design-system_ workspace.
+
+
+Make sure the storybook already running:
 
 ```
-yarn test
+yarn design-system
 ```
 
+Then run in __separate__ terminal window:
+
+```
+yarn test:loki
+```
 
 __By default the tests are configured for chrome desktop and mobile only. [Refer to documentation](https://loki.js.org/configuration.html) if you want to extend your configuration.__
 
 You'll see the status of your tests in the console. If the test fail, you can check diff images in `design-system/loki/diff`. You can update reference images by name (see tips in the console), or all together with
 
 ```
-yarn test:approve
+yarn test:loki:approve
+```
+
+
+If you want to update all tests at once, you can run:
+```
+yarn test:loki:update
 ```

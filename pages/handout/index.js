@@ -12,7 +12,6 @@ import LegoIcon from "../../public/blocks.svg";
 import FeedbackIcon from "../../public/chat-box.svg";
 import DeploymentIcon from "../../public/deployment.svg";
 import TestingIcon from "../../public/testing.svg";
-import WebdesignIcon from "../../public/webdesign.svg";
 import SyncIcon from "../../public/sync.svg";
 import SetupIcon from "../../public/setup.svg";
 
@@ -49,22 +48,16 @@ const blocks = [
     roles: ["developer"],
   },
   {
-    title: "Re-design",
-    image: WebdesignIcon,
+    title: "Design Changes",
+    image: LegoIcon,
     slug: "re-design",
-    roles: ["designer"],
+    roles: ["designer", "developer"],
   },
   {
     title: "Product release",
     image: DeploymentIcon,
     slug: "product-release",
     roles: ["developer"],
-  },
-  {
-    title: "Design changes",
-    image: LegoIcon,
-    slug: "design-chages",
-    roles: ["designer", "developer"],
   },
   {
     title: "Visual regression tests",
