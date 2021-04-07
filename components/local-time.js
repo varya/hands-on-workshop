@@ -10,14 +10,14 @@ const isDstObserved = () =>
 function getTimezoneAbbr(tzOffset) {
   switch (tzOffset) {
     case 0:
-      return "GMT";
+      return "BST";
     case 1:
-      return "CET";
+      return "CEST";
     case 3:
       return "MSK";
     case 2:
     default:
-      return "EET";
+      return "EEST";
   }
 }
 export default function LocalTime({
