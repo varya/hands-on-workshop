@@ -20,7 +20,7 @@ file from your designer, put it as `tokens/design-tokens.json` into
 the repository. Then, build the tokens
 
 ```
-yarn build:tokens
+yarn tokens:build
 ```
 
 This command changes the files in `tokens/dist` directory. Normally, you would
@@ -60,7 +60,7 @@ yarn tokens:version
 
 The release script will build the tokens, increment the version and commit the
 result of the build. If you want to check beforehand that the build is not broken,
-run `build:tokens`.
+run `tokens:build`.
 
 ### Upgrade the tokens version in the library
 
@@ -83,15 +83,15 @@ you can release your library:
 
 
 ```
-yarn version:design-system
+yarn design-system:version
 ```
 
 Similarly to the process with tokens, you will be prompted to type a version.
 Alongside with incrementing the version, this command builds the library and
 commits the result to the repository. If you want to check beforehand that the
-build goes normally, run `yarn build:design-system`.
+build goes normally, run `yarn design-system:build`.
 
-**Now you can use the noew library version in the product.**
+**Now you can use the new library version in the product.**
 
 ### Additional information
 
