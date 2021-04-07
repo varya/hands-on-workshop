@@ -58,10 +58,10 @@ export default function IndexPage() {
                 "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
             }
           >
-            Register
+            SOLD OUT
           </Button>
           <p className="m-6 mx-6 text-sm text-bold">
-            <strong>Available tickets:</strong> 2 for developers
+            &nbsp;
           </p>
         </div>
         {/* <!--Right Col--> */}
@@ -486,22 +486,8 @@ export default function IndexPage() {
               8 & 9 April
             </p>
             <p className="my-4 text-3xl leading-tight">
-              Early-bird tickets: SOLD OUT
+              SOLD OUT
             </p>
-            <p className="my-4 text-3xl leading-tight">
-              Regular price tickets: €350{" "}
-              <span className="opacity-60">(+{"\u00A0"}€84.00 VAT)</span>
-            </p>
-            <Button
-              name="bottom-register"
-              className="px-8 py-4 mx-auto my-6 mt-auto font-bold text-gray-800 transition duration-300 ease-in-out transform bg-white rounded-full shadow-lg lg:mx-0 hover:underline focus:outline-none focus:shadow-outline hover:scale-105"
-              onClick={() =>
-                (location.href =
-                  "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
-              }
-            >
-              Register to the workshop
-            </Button>
           </div>
           {/* RIGHT COL */}
           <div className="flex flex-col w-full pl-6 mt-12 justify- md:w-6/12">
