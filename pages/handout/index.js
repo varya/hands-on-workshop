@@ -14,6 +14,7 @@ import DeploymentIcon from "../../public/deployment.svg";
 import TestingIcon from "../../public/testing.svg";
 import SyncIcon from "../../public/sync.svg";
 import SetupIcon from "../../public/setup.svg";
+import FlagIcon from "../../public/flag.svg";
 
 const pathPrefix = "/handout";
 const blocks = [
@@ -39,6 +40,12 @@ const blocks = [
     title: "Coding the library",
     image: CodingIcon,
     slug: "coding-library",
+    roles: ["developer"],
+  },
+  {
+    title: "Releasing the library",
+    image: FlagIcon,
+    slug: "releasing-library",
     roles: ["developer"],
   },
   {
