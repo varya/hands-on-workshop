@@ -15,6 +15,7 @@ import TestingIcon from "../../public/testing.svg";
 import SyncIcon from "../../public/sync.svg";
 import SetupIcon from "../../public/setup.svg";
 import FlagIcon from "../../public/flag.svg";
+import CheckList from "../../public/check-list.svg";
 
 const pathPrefix = "/handout";
 const blocks = [
@@ -59,6 +60,12 @@ const blocks = [
     image: LegoIcon,
     slug: "re-design",
     roles: ["designer", "developer"],
+  },
+  {
+    title: "Changes to the library",
+    image: CheckList,
+    slug: "library-update",
+    roles: ["developer"],
   },
   {
     title: "Product release",
