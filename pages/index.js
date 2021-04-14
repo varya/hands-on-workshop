@@ -44,29 +44,6 @@ export default function IndexPage() {
         {/* <!--Left Col--> */}
         <div className="flex flex-col items-center justify-center w-full mt-12 text-center md:w-6/12 md:text-left">
           <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
-            8 & 9 April
-          </p>
-          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
-            <LocalTime start={11} end={15} format="%start%-%end% %timezone%" />
-          </p>
-          <Button
-            variant="base"
-            className="mt-12 mb-0"
-            name="hero register"
-            onClick={() =>
-              (location.href =
-                "https://www.eventbrite.fi/e/hands-on-with-design-systems-tickets-143823667461")
-            }
-          >
-            SOLD OUT
-          </Button>
-          <p className="m-6 mx-6 text-sm text-bold">
-            &nbsp;
-          </p>
-        </div>
-        {/* <!--Right Col--> */}
-        <div className="flex flex-col items-center justify-center w-full mt-12 text-center md:w-6/12 md:text-left">
-          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
             5 & 6 May
           </p>
           <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
@@ -86,6 +63,29 @@ export default function IndexPage() {
           <p className="m-6 mx-6 text-sm text-bold">
             <strong>Available tickets:</strong> 3 for designers, 4 for
             developers
+          </p>
+        </div>
+        {/* <!--Right Col--> */}
+        <div className="flex flex-col items-center justify-center w-full mt-12 text-center md:w-6/12 md:text-left">
+        <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+            Want same workshop but
+          </p>
+          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+            on another date?
+          </p>
+          <Button
+            variant="base"
+            className="mt-12 mb-0"
+            name="hero register"
+            onClick={() =>
+              (location.href =
+                "https://docs.google.com/forms/d/e/1FAIpQLSdatFiIDgRfQ0_uNhNHN0Hk6dWz8sRCwa0QLh1s6jVjzLyBNg/viewform")
+            }
+          >
+            Join waiting list
+          </Button>
+          <p className="m-6 mx-6 text-sm text-bold">
+            We will ran once again and ensure your early-bird price!
           </p>
         </div>
       </Hero>
