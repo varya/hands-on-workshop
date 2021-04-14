@@ -332,7 +332,7 @@ export default function IndexPage() {
             </a>
           </div>
         </BlockImage>
-        <BlockImage image={<Avatar src="/nikita.jpg" alt="Nikita Sharbakov" />}>
+        {/* <BlockImage image={<Avatar src="/nikita.jpg" alt="Nikita Sharbakov" />}>
           <h3 className="mb-3 text-3xl font-bold leading-none text-gray-800">
             Nikita Sherbakov
           </h3>
@@ -367,7 +367,7 @@ export default function IndexPage() {
               />
             </a>
           </div>
-        </BlockImage>
+        </BlockImage> */}
       </Section>
 
       <Section title="People say" className="bg-gray-100">
@@ -379,7 +379,7 @@ export default function IndexPage() {
           just defining it well. I would gladly recommend Varya to anyone who is
           looking for a Design System expert.
         </Testimonial>
-        <Testimonial author="Ekaterina Blake">
+        {/* <Testimonial author="Ekaterina Blake">
           Nikita is an extremely skilled web programmer and a wonderful person
           to work with. His ability to efficiently understand, communicate, and
           execute requested adjustments is superior. His experience is
@@ -388,7 +388,7 @@ export default function IndexPage() {
           takes the time to handle every question and concern right down to the
           last detail. I highly recommend Nikita for any programming need and
           happily serve as a reference!
-        </Testimonial>
+        </Testimonial> */}
         <Testimonial author="Anthony Tahar" dir="right">
           Sherif is a proactive and tireless contributor who would make a great
           addition to any team. He completed his assignments on time and never
@@ -400,7 +400,7 @@ export default function IndexPage() {
           business partner! She is a valuable asset to any team when it comes to
           solving complex business problems! I'm glad to recommend her!
         </Testimonial>
-        <Testimonial author="Rami Etrimo" dir="right">
+        {/* <Testimonial author="Rami Etrimo" dir="right">
           Ability and need to understand the big picture, and always learning
           new things and utilising those learnings in practice, makes Nikita an
           asset to any product development team. Nikita's experience and skills
@@ -408,7 +408,7 @@ export default function IndexPage() {
           pleasure of working with Nikita in a team responsible for developing a
           fairly complex product where he was able to show the power to those
           two combined with very good results.
-        </Testimonial>
+        </Testimonial> */}
         <Testimonial author="David Teissier">
           Sherif was a true professional in his business. Great skills in web
           design and UX. CSS has no secrets for him also. We worked together on
