@@ -420,6 +420,7 @@ export default function IndexPage() {
         wide
         title="Companies that use design systems"
         titleDecoration={false}
+        id="design-systems-companies"
         className="border-transparent"
       >
         <div className="relative flex w-full py-8 bg-center bg-design-systems">
