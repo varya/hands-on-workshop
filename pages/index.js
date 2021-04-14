@@ -11,6 +11,7 @@ import Timeline, { TimelineItem } from "@components/timeline";
 import Testimonial from "@components/testimonials";
 import LocalTime from "@components/local-time";
 import Header from "@components/header";
+import TicketsInfo from "@components/tickets-info";
 
 import DesignIcon from "../public/sketch.svg";
 import DevIcon from "../public/web-development.svg";
@@ -60,14 +61,11 @@ export default function IndexPage() {
           >
             Register
           </Button>
-          <p className="m-6 mx-6 text-sm text-bold">
-            <strong>Available tickets:</strong> 3 for designers, 4 for
-            developers
-          </p>
+          <TicketsInfo />
         </div>
         {/* <!--Right Col--> */}
         <div className="flex flex-col items-center justify-center w-full mt-12 text-center md:w-6/12 md:text-left">
-        <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
             Want same workshop but
           </p>
           <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
@@ -485,9 +483,7 @@ export default function IndexPage() {
             <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
               8 & 9 April
             </p>
-            <p className="my-4 text-3xl leading-tight">
-              SOLD OUT
-            </p>
+            <p className="my-4 text-3xl leading-tight">SOLD OUT</p>
           </div>
           {/* RIGHT COL */}
           <div className="flex flex-col w-full pl-6 mt-12 justify- md:w-6/12">
