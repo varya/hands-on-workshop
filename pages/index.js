@@ -61,8 +61,8 @@ export default function IndexPage() {
             Register
           </Button>
           <p className="m-6 mx-6 text-sm text-bold">
-            <strong>Available tickets:</strong> 3 for designers, 4 for
-            developers
+            <strong>Available tickets:</strong> 2 for designers, 1 for
+            a developer
           </p>
         </div>
         {/* <!--Right Col--> */}
