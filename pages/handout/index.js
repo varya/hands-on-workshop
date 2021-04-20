@@ -44,6 +44,12 @@ const blocks = [
     roles: ["developer", "designer"],
   },
   {
+    title: "Designing the library",
+    image: CodingIcon,
+    slug: "designing-library",
+    roles: ["designer"],
+  },
+  {
     title: "Coding the library",
     image: CodingIcon,
     slug: "coding-library",
