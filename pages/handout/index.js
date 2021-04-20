@@ -16,6 +16,8 @@ import SyncIcon from "../../public/sync.svg";
 import SetupIcon from "../../public/setup.svg";
 import FlagIcon from "../../public/flag.svg";
 import CheckList from "../../public/check-list.svg";
+import Sketch from "../../public/sketch2.svg";
+import SettingsIcon from "../../public/settings.svg";
 
 const pathPrefix = "/handout";
 const blocks = [
@@ -27,7 +29,7 @@ const blocks = [
   },
   {
     title: "Figma setup",
-    image: BoxIcon,
+    image: SettingsIcon,
     slug: "figma-setup",
     roles: ["designer"],
   },
@@ -39,13 +41,13 @@ const blocks = [
   },
   {
     title: "UI inventory",
-    image: SetupIcon,
+    image: BoxIcon,
     slug: "ui-inventory",
     roles: ["developer", "designer"],
   },
   {
     title: "Designing the library",
-    image: CodingIcon,
+    image: Sketch,
     slug: "designing-library",
     roles: ["designer"],
   },
