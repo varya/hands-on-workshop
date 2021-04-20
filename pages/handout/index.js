@@ -18,9 +18,17 @@ import FlagIcon from "../../public/flag.svg";
 import CheckList from "../../public/check-list.svg";
 import Sketch from "../../public/sketch2.svg";
 import SettingsIcon from "../../public/settings.svg";
+import Flow from "../../public/flow.svg";
+
 
 const pathPrefix = "/handout";
 const blocks = [
+  {
+    title: "Workshop flow",
+    image: Flow,
+    slug: "workshop-flow",
+    roles: [],
+  },
   {
     title: "Making a toast",
     image: ToastIcon,
