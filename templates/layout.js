@@ -17,7 +17,7 @@ function Layout(props) {
       <div className="flex bg-white min-w-100">
         <div className="container max-w-2xl py-2 pl-8 mx-auto text-xl text-left underline text-v-red">
           <Link className="text-v-red" href="/handout">
-            Go Back
+            Back to the Main page
           </Link>
         </div>
       </div>

@@ -26,16 +26,22 @@ const blocks = [
     roles: ["designer", "developer"],
   },
   {
-    title: "UI Inventory",
+    title: "Figma setup",
     image: BoxIcon,
-    slug: "./inventory",
-    roles: ["designer", "developer"],
+    slug: "figma-setup",
+    roles: ["designer"],
   },
   {
-    title: "Setting up the project",
+    title: "Repository setup",
     image: SetupIcon,
-    slug: "setup",
+    slug: "repo-setup",
     roles: ["developer"],
+  },
+  {
+    title: "UI inventory",
+    image: SetupIcon,
+    slug: "ui-inventory",
+    roles: ["developer", "designer"],
   },
   {
     title: "Coding the library",
