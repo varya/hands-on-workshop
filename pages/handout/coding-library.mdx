@@ -55,3 +55,20 @@ don't forget also change there.
 ### What do I code?
 Check [https://component.gallery/](https://component.gallery/) to get ideas on how to fill your
 component with code.
+
+## Creating visual references
+
+To keep the system consistent, you should always provide visual references for your
+components. This will make automatic testing work smoothly. This is how
+you can do it:
+
+1. Run the testing UI with `yarn test:creevey:ui`
+2. Run the tests and examine the results
+  1. Noticed the inconcistency? Fix and run the tests again.
+  2. There is a change but you were expecting it? Approve.
+
+If you created a new component, or visualy changed the existing one, it
+will always go with the change of their visual references. Notice the changes
+files in `design-system/tests/referenceImages`, add them and commit. It is
+a good habit to include your visual references in your pull request. And it
+ensures the tests automation.
