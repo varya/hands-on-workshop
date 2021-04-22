@@ -84,7 +84,7 @@ const blocks = [
     roles: ["designer", "developer"],
   },
   {
-    title: "Changes to the library",
+    title: "Cast in code",
     image: CheckList,
     slug: "library-update",
     roles: ["developer"],
