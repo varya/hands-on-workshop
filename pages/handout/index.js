@@ -54,9 +54,9 @@ const blocks = [
     roles: ["developer", "designer"],
   },
   {
-    title: "Designing the library",
+    title: "Design tokens",
     image: Sketch,
-    slug: "designing-library",
+    slug: "design-tokens",
     roles: ["designer"],
   },
   {
@@ -115,7 +115,7 @@ const blocks = [
       "https://docs.google.com/forms/d/e/1FAIpQLSfdIs-UqbZNU5asS3z_YlREEqYmgfYGfL53McjiBAlcB6YfoA/viewform?usp=sf_link",
     roles: ["designer", "developer"],
   },
-];
+]
 
 export default function HandoutPage() {
   return (
