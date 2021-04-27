@@ -81,7 +81,7 @@ const blocks = [
     title: "Design Changes",
     image: LegoIcon,
     slug: "re-design",
-    roles: ["designer", "developer"],
+    roles: ["designer"],
   },
   {
     title: "Cast in code",
@@ -95,12 +95,12 @@ const blocks = [
     slug: "product-release",
     roles: ["developer"],
   },
-  {
-    title: "Visual regression tests",
-    image: TestingIcon,
-    slug: "visual-tests",
-    roles: ["developer"],
-  },
+  // {
+  //   title: "Visual regression tests",
+  //   image: TestingIcon,
+  //   slug: "visual-tests",
+  //   roles: ["developer"],
+  // },
   {
     title: "Automatic syncronizations",
     image: SyncIcon,
