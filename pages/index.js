@@ -41,8 +41,10 @@ export default function IndexPage() {
           </p>
         </div>
 
-        {/* <!--Left Col--> */}
-        <div className="flex flex-col items-center justify-center w-full mt-12 text-center md:w-6/12 md:text-left">
+        <div class="flex w-full flex-wrap">
+
+          {/* <!--Left Col--> */}
+          <div class="flex flex-col md:w-1/2 items-center">
           <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
             5 & 6 May
           </p>
@@ -53,20 +55,39 @@ export default function IndexPage() {
             variant="base"
             className="mt-12 mb-0"
             name="hero register"
-            onClick={() =>
-              (location.href =
-                "https://www.eventbrite.com/e/hands-on-with-design-systems-may-tickets-148020289671")
-            }
           >
-            Register
+            SOLD OUT
           </Button>
           <p className="m-6 mx-6 text-sm text-bold">
-            <strong>SOLD OUT</strong>
+            &nbsp;
           </p>
-        </div>
-        {/* <!--Right Col--> */}
-        <div className="flex flex-col items-center justify-center w-full mt-12 text-center md:w-6/12 md:text-left">
-        <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+          </div>
+
+          {/* <!--Right Col--> */}
+          <div class="flex flex-col md:w-1/2 items-center">
+          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+            2 & 3 June
+          </p>
+          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+            <LocalTime start={11} end={15} format="%start%-%end% %timezone%" />
+          </p>
+          <Button
+            variant="base"
+            className="mt-12 mb-0"
+            name="hero register"
+            onClick={() =>
+              (location.href =
+                "https://www.eventbrite.com/e/hands-on-with-design-systems-june-tickets-152896600849")
+            }
+          >
+            Pre-order
+          </Button>
+          <p className="m-6 mx-6 text-sm text-bold">
+            You can register your interest. Workshop will happen
+            when we get at least 4 designers and 4 developers. We ensure early-bird price
+            for the people who pre-ordered.
+          </p>
+          {/* <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
             Want same workshop but
           </p>
           <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
@@ -85,7 +106,8 @@ export default function IndexPage() {
           </Button>
           <p className="m-6 mx-6 text-sm text-bold">
             We will ran once again and ensure your early-bird price!
-          </p>
+          </p> */}
+          </div>
         </div>
       </Hero>
       <SectionShape className="-mt-12 lg:-mt-24" />
