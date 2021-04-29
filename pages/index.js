@@ -41,7 +41,7 @@ export default function IndexPage() {
           </p>
         </div>
 
-        <div class="flex w-full flex-wrap">
+        <div className="flex w-full flex-wrap">
 
           {/* <!--Left Col--> */}
           <div class="flex flex-col md:w-1/2 items-center">
@@ -64,7 +64,7 @@ export default function IndexPage() {
           </div>
 
           {/* <!--Right Col--> */}
-          <div class="flex flex-col md:w-1/2 items-center">
+          <div className="flex flex-col md:w-1/2 items-center">
           <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
             2 & 3 June
           </p>
