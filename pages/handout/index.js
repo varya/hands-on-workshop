@@ -112,7 +112,7 @@ const blocks = [
     image: FeedbackIcon,
     slug: "feedback",
     url:
-      "https://docs.google.com/forms/d/e/1FAIpQLSfdIs-UqbZNU5asS3z_YlREEqYmgfYGfL53McjiBAlcB6YfoA/viewform?usp=sf_link",
+      "https://docs.google.com/forms/d/124ha3LG7-07rizB9yjoqNGkB31Yzw6jtFvImsz7-Utg",
     roles: ["designer", "developer"],
   },
 ]
