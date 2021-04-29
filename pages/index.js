@@ -51,15 +51,8 @@ export default function IndexPage() {
           <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
             <LocalTime start={11} end={15} format="%start%-%end% %timezone%" />
           </p>
-          <Button
-            variant="base"
-            className="mt-12 mb-0"
-            name="hero register"
-          >
-            SOLD OUT
-          </Button>
-          <p className="m-6 mx-6 text-sm text-bold">
-            &nbsp;
+          <p className="m-6 mx-6 text-xl">
+            <strong>&lt;/SOLD OUT&gt;</strong>
           </p>
           </div>
 
@@ -80,7 +73,7 @@ export default function IndexPage() {
                 "https://www.eventbrite.com/e/hands-on-with-design-systems-june-tickets-152896600849")
             }
           >
-            Pre-order
+            PRE-ORDER
           </Button>
           <p className="m-6 mx-6 text-sm text-bold">
             You can register your interest. Workshop will happen
