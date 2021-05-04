@@ -20,7 +20,6 @@ import Sketch from "../../public/sketch2.svg";
 import SettingsIcon from "../../public/settings.svg";
 import Flow from "../../public/flow.svg";
 
-
 const pathPrefix = "/handout";
 const blocks = [
   {
@@ -86,7 +85,7 @@ const blocks = [
   {
     title: "Cast in code",
     image: CheckList,
-    slug: "library-update",
+    slug: "cast-in-code",
     roles: ["developer"],
   },
   {
@@ -115,7 +114,7 @@ const blocks = [
       "https://docs.google.com/forms/d/124ha3LG7-07rizB9yjoqNGkB31Yzw6jtFvImsz7-Utg",
     roles: ["designer", "developer"],
   },
-]
+];
 
 export default function HandoutPage() {
   return (
