@@ -45,21 +45,34 @@ export default function IndexPage() {
 
           {/* <!--Left Col--> */}
           <div class="flex flex-col md:w-1/2 items-center">
-          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
-            5 & 6 May
-          </p>
-          <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
-            <LocalTime start={11} end={15} format="%start%-%end% %timezone%" />
-          </p>
-          <p className="m-6 mx-6 text-xl">
-            <strong>&lt;/SOLD OUT&gt;</strong>
-          </p>
+            <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+              2 & 3 June
+            </p>
+            <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
+              <LocalTime start={11} end={15} format="%start%-%end% %timezone%" />
+            </p>
+            <Button
+              variant="base"
+              className="mt-12 mb-0"
+              name="hero register"
+              onClick={() =>
+                (location.href =
+                  "https://www.eventbrite.com/e/hands-on-with-design-systems-june-tickets-152896600849")
+              }
+            >
+              PRE-ORDER
+            </Button>
+            <p className="m-6 mx-6 text-sm text-bold">
+              You can register your interest. Workshop will happen
+              when we get at least 4 designers and 4 developers. We ensure early-bird price
+              for the people who pre-ordered.
+            </p>
           </div>
 
           {/* <!--Right Col--> */}
           <div className="flex flex-col md:w-1/2 items-center">
           <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
-            2 & 3 June
+            1 & 2 September
           </p>
           <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
             <LocalTime start={11} end={15} format="%start%-%end% %timezone%" />
@@ -70,15 +83,13 @@ export default function IndexPage() {
             name="hero register"
             onClick={() =>
               (location.href =
-                "https://www.eventbrite.com/e/hands-on-with-design-systems-june-tickets-152896600849")
+                "https://www.eventbrite.com/e/hands-on-with-design-systems-september-tickets-154073882129")
             }
           >
-            PRE-ORDER
+            REGISTER
           </Button>
           <p className="m-6 mx-6 text-sm text-bold">
-            You can register your interest. Workshop will happen
-            when we get at least 4 designers and 4 developers. We ensure early-bird price
-            for the people who pre-ordered.
+            10 tickets for designers, 10 tickets for developers
           </p>
           {/* <p className="w-full text-xl font-bold text-center uppercase tracking-loose">
             Want same workshop but
