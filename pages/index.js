@@ -60,12 +60,10 @@ export default function IndexPage() {
                   "https://www.eventbrite.com/e/hands-on-with-design-systems-june-tickets-152896600849")
               }
             >
-              PRE-ORDER
+              REGISTER
             </Button>
             <p className="m-6 mx-6 text-sm text-bold">
-              You can register your interest. Workshop will happen
-              when we get at least 4 designers and 4 developers. We ensure early-bird price
-              for the people who pre-ordered.
+              <b>Available tickets</b>: 8 for designers, 8 for developers
             </p>
           </div>
 
@@ -127,10 +125,10 @@ export default function IndexPage() {
             practice iterative component-driven design and development and
             create documentation along with making the product. The exercise
             contains managing collaborative updates and keeping the code in sync
-            with the design reality.
+            with the design reality via design tokens.
           </p>
           <p className="my-4 text-xl leading-8 ">
-            By the end of the workshop, each team has a ready-to-use component
+            By the end of the workshop, each team has a ready-to-use and documented component
             library, an end product built out of that, and a tuned process to
             ensure smooth updates.
           </p>
