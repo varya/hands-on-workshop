@@ -12,11 +12,12 @@ const MDXComponents = {
   },
 };
 function Layout(props) {
+  const mainPagePath = props.meta.path ? `/handout/${props.meta.path}/` : `/handout/`;
   return (
     <>
       <div className="flex bg-white min-w-100">
         <div className="container max-w-2xl py-2 pl-8 mx-auto text-xl text-left underline text-v-red">
-          <Link className="text-v-red" href="/handout">
+          <Link className="text-v-red" href={mainPagePath}>
             Back to the Main page
           </Link>
         </div>
