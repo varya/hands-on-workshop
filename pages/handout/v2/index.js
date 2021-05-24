@@ -128,7 +128,7 @@ export default function HandoutPage() {
       <div className="flex-1 w-full h-full bg-gray-200">
         <div className="container flex flex-wrap max-w-5xl m-8 mx-auto">
           {blocks.map((block) => {
-            const link = block.url ? block.url : `${pathPrefix}/${block.slug}`;
+            const link = block.url ? block.url : `${pathPrefix}/v2/${block.slug}`;
             return (
               <Card key={block.slug} className="sm:w-1/2 md:w-1/3 group">
                 <div className="w-full h-full px-16 pt-4 pb-8 md:px-8">
