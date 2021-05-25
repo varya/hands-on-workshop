@@ -66,9 +66,9 @@ const blocks = [
     day: 1,
   },
   {
-    title: "Coding the library",
+    title: "Coding session",
     image: CodingIcon,
-    slug: "coding-library",
+    slug: "coding-session",
     roles: ["developer"],
     day: 1,
   },
