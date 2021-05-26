@@ -63,7 +63,7 @@ export default function IndexPage() {
               REGISTER
             </Button>
             <p className="m-6 mx-6 text-sm text-bold">
-              <b>Available tickets</b>: 5 for developers
+              <b>Available tickets</b>: 1 for a designer, 2 for developers
             </p>
           </div>
 
