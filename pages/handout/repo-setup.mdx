@@ -11,6 +11,7 @@ Before you start, make sure you have the following apps installed on your machin
 - Node.js 12+
 - Yarn
 
+
 ## Getting your team's repository
 
 Chose who of your team will host the repository in their GitHub account. This person
@@ -23,6 +24,35 @@ green button "Use this template". Make sure you choose a **publc** reposiitory t
 
 In your repository, go to *Settings -> Manage access* and invite your team members
 as collaborators.
+
+
+## Setting up for automatic deployment
+
+We are taking advantage of GitHub Action and deploy design system when changes are pushed.
+But to make it working, you need a bit of setup.
+
+### 1. Define the `homepage` property
+You need to edit "homepage" property in ./design-system/package.json. It should be pointing to your repository.
+
+```
+{
+  "homepage": "https://<USERNAME>.github.io/<REPOSITORY_NAME>",
+  ...
+}
+
+Commit and push.
+
+### 2. Wait for the first build
+
+Go to *Actions* tab in your GitHub repo and wait for the first build.
+
+### 3. Define the deployment branch
+
+ Make sure your working repository is public, and the deployment branch is set to "gh-pages".
+ For that, go to **Settings -> Pages** and choose the `gh-pages` branch in the **Source**
+ select.
+
+ You should be able to see the design system deployed at `https://<USERNAME>.github.io/<REPOSITORY_NAME>/design-system/"`.
 
 
 ## On your computers
