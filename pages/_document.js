@@ -29,6 +29,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <meta http-equiv="refresh" content="0; https://hands-on-workshop.goright.io/" />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
             async
